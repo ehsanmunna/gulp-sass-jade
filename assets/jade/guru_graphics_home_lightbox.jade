@@ -1,0 +1,57 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post hello we are guru!
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-1.jpg")
+					div.gg-inner-col-2
+						img(src="assets/images/img-2.jpg")
+			div.gg-right-col
+				ul.gg-nav-info.home-nav-list
+					li.text-bold.text-keytext Guro facts
+					li.text-bold.text-keytext Founded
+					li.text-bold.text-body 2006
+					li.text-bold.text-keytext Incorporation
+					li.text-bold.text-body 4 September 2010
+					li.text-bold.text-keytext Logo canghing
+					li.text-bold.text-body 2014
+
+		div.h-line-left
+		div.gg-separator.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-3.jpg")
+					div.gg-inner-col-2
+						h3.heading-post about guru graphics
+						div ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim <span class="text-bold">veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+
+							p.text-right
+								a.text-important(href="#") more
+
+		div.h-line-right
+
+		+workwithateam2()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset(style="position: relative")
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-2.jpg")
+					div.gg-inner-col-2
+						+homeform()
+
+						.address
+							h3.text-primary.post-header we are in london
+							p
+								| You can find our office in
+								span.text-bold London
+								| , contact or phone us we are really friendly.
+							+address()

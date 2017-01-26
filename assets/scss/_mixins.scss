@@ -1,0 +1,43 @@
+@mixin horizantal-margin($left: 15px, $right: 15px){
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin vartical-margin($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin margin-all($value){
+    margin-left: $value;
+    margin-right: $value;
+    margin-top: $value;
+    margin-bottom: $value;
+}
+
+@mixin horizantal-padding($left, $right){
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin vartical-padding($top, $bottom){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin padding-all($value){
+    padding-left: $value;
+    padding-right: $value;
+    padding-top: $value;
+    padding-bottom: $value;
+}
+
+@mixin anchor-color($color){
+	a {
+    color: $color;
+
+    &:hover{
+      color: lighten($color, 12%);
+    }
+  }
+}

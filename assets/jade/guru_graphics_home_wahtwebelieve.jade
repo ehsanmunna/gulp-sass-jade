@@ -1,0 +1,64 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post hello we are guru!
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-1.jpg")
+					div.gg-inner-col-2
+						img(src="assets/images/img-2.jpg")
+			+homeRightStatistic()
+
+		div.h-line-left
+
+		div.gg-separator.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						h3.heading-post the humans behinds
+						div
+							label.text-bold 1. INNOVATIVE
+							div A product needs to be innovative in its own particular way, needs to have something that hits you right in the chest, even the most common practice can be improved.
+							label.text-bold 2. THOUGHT
+							div There’s always a why that brings to a how. Knowing why we’re doing something is the guideline to do it.
+							label.text-bold 3. STUDIED
+							div Every decision should have a rational reason and a study to understand and apply its best implementation. The location, the consistency, the negative space, the typography.
+							label.text-bold 4. DETAILS
+							div Even the smallest detail must have a meaning and a purpose, even when opting for a minimal and hyper-clean design, everything should communicate a precise feeling, idea, intention.
+							label.text-bold 5. INTUITIVE
+							div The design should completely serve the usability while enhancing the appearance of the product. A product should always explain itself by only presenting itself.
+							label.text-bold 6. GOODLOOKING
+							div A good product must be a pleasure for the eyes. Why? Unconsciously, no one wants to use or own an ugly product, even if it is probably the best on the market.
+							label.text-bold 7. COMPACT
+							div Besides the size or the amount of functionalities of a product, it should be compact. For a product to be compact it is crucial a correct UX study and analysis, to make sure all the various functionalities and features coexist in a perfect balance.
+							label.text-bold 8. UPTODATE
+							div A product should be always udiv to date with the latest technologies and design trends, although it should have its own identity, this identity can’t be built on deprecated or obsolete rules.
+							label.text-bold 9. STABLEANDSECURE
+							div Our products are always stable and secure. A good product shouldn’t break or leave its user in bad situations because of security issues.
+							label.text-bold 10. OWNER FRIENDLY
+							div A product should always allow its final user to completely manage it in all of its functionalities without requiring any external help or explanation. Easily. Only when anyone immediately understands a product by just using it, you know you’ve done a good product.
+
+							p.text-right
+								a.text-important(href="#") more
+					div.gg-inner-col-2
+						img(src="assets/images/webdevelopment.jpg")
+
+		div.h-line-right
+
+		+workwithateam()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						h3.heading-post we are in london
+						p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						+address()

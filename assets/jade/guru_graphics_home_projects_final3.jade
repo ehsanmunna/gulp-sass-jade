@@ -1,0 +1,40 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post HELLO WE ARE GURU!
+				div.gg-inner-row-2.gg-top-post.gg-gallary-grid
+					- var imgs = [{image:'projects-final-grey-1.jpg', caption: 'Find Your Job'},{image:'projects-final-grey-2.jpg', caption: 'Chef De Ville'},{image:'projects-final-3.jpg', caption: 'Focalpoint', opacity: false}, {image:'projects-final-grey-4.jpg', caption: 'London House'},{image:'projects-final-grey-5.jpg', caption: 'Yoga Team'},{image:'projects-final-grey-6.jpg', caption: 'Seba Digital'}]
+					+projectGalleryOpacity(imgs)
+			div.gg-right-col
+				ul.gg-nav-info.home-nav-list
+					li.text-bold.text-keytext Guro facts
+					li.text-bold.text-keytext Founded
+					li.text-bold.text-body 2006
+					li.text-bold.text-keytext Incorporation
+					li.text-bold.text-body 4 September 2010
+					li.text-bold.text-keytext Logo canghing
+					li.text-bold.text-body 2014
+
+		div.h-line-left
+		+aboutgurugraphic()
+
+		div.h-line-right
+
+		+workwithateam2()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						.address
+							h3.text-primary.post-header we are in london
+							p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+							+address()

@@ -1,0 +1,40 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post production approach
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						p
+							<span class="text-bold">The team’s goal is to improve whatever can be improved</span>, and that’s a thing that big corporations struggle to apply because of their complex infrastructure. Guru Graphics has the financial capital and the expertise level of a corporation, but not the same |hierarchy and infrastructure: we don’t depend or rely to anyone and this will never change in order to keep ourselves on top of our own game. We look after our clients projects as we produce our own products. Our approach to any kind of project or product is a quality-first approach. Our products aim to be as close to perfection as possible, in fact, even our cheapest web application comes with:
+						p
+							span.text-bold Pixel-perfect stunning design tailored on the   application’s purpose.</br>Responsive and cross-browser structure and improved usability.</br> Studied and up to date UI and UX.</br> up to date development technologies and frameworks.</br> Highly performant back-end system.</br> Optimisation for maximum loading time. </br> Optimisation for maximum performance. </br> Optimisation for maximum SEO score.</br> paranoidly secure code.</br>
+						p Many of these aspects are considered from other web development companies as “extras” or “optionals”. For us, all these extras are instead basic compulsory requirements that each web application should have. This is why we ensure quality.
+					div.gg-inner-col-2
+						img(src="assets/images/whatwedo.jpg")
+			+homeRightStatistic()
+
+		div.h-line-left
+
+		+aboutgurugraphic()
+
+						
+
+		div.h-line-right
+
+		+workwithateam()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						h3.heading-post we are in london
+						p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						+address()

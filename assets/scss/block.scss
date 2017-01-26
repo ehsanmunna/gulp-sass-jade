@@ -1,0 +1,72 @@
+
+@mixin columnFunc($width, $pleft, $pright){
+	width: $width;
+	padding-left: $pleft;
+	padding-right: $pright;
+	margin-top:0;
+	float:left;
+}
+//for left menu
+.gg-left-col{
+	@include columnFunc($left-block, $left-block-pad-left, $left-block-pad-right);
+}
+//for center column with left menu
+.gg-center-col{
+	@include columnFunc($center-block, 0,0);
+}
+//center column without left menu
+.gg-center-left-offset{
+	@include columnFunc($center-block, 0,0);
+	margin-left: $left-block-width;
+}
+//right column for menu and information
+.gg-right-col{
+	@include columnFunc($right-block, $right-block-pad-left, $right-block-pad-right);
+}
+
+$space-for-border: 26px;
+.gg-separator{
+	.gg-left-col{
+		padding-right: 0;
+	}
+	.gg-center-col{
+		padding-left:$space-for-border;
+		border-left: 1px solid $color-brand;
+	}
+	.gg-center-left-offset{
+		border-left: 1px solid $color-brand;
+		margin-left: $left-block-width - $space-for-border - 2px;
+		padding-left: $space-for-border;
+	}
+}
+
+.gg-row{
+	&:before{
+		display: table;
+		content: " ";
+	}
+	&:after{
+		display: table;
+		content: " ";
+		clear: both;
+	}
+}
+$inner-col-space: 17px;
+.gg-inner-row-2{
+	margin-right: - $inner-col-space / 2;
+	margin-left: - $inner-col-space / 2;
+}
+
+.gg-inner-col-2{
+	width: ($container-size - $inner-col-space) / 2;
+	margin-right: $inner-col-space / 2;
+	margin-left: $inner-col-space / 2;
+	float:left;
+}
+
+.gg-inner-col-3{
+	width: ($container-size - $inner-col-space) / 3;
+	margin-right: $inner-col-space / 3;
+	margin-left: $inner-col-space / 3;
+	float:left;
+}

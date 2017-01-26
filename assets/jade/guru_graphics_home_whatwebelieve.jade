@@ -1,0 +1,35 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post hello we are guru!
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/whatwebelieve.jpg")
+						p ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim <span class="text-bold">veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+			+homeRightStatistic()
+
+		div.h-line-left
+
+		+aboutgurugraphic()
+
+						
+
+		div.h-line-right
+
+		+workwithateam()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						h3.heading-post we are in london
+						p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						+address()

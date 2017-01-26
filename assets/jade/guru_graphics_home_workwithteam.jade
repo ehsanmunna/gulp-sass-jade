@@ -1,0 +1,46 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post hello we are guru!
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-1.jpg")
+					div.gg-inner-col-2
+						img(src="assets/images/img-2.jpg")
+			+homeRightStatistic()
+
+		div.h-line-left
+
+		+thehumansbehinds("img-3")
+
+		div.h-line-right
+
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						h3.heading-post work with a team
+						p We have our way to do things, which combined with our excellent skillset, is an amazing deal for clients and other businesses as you can’t usually find such a level of expertise and professionalism combined to such a <span class="text-bold">client-friendly behaviour</span>, coming from a very flexible and fresh creative team.
+						p Nowadays, corporations run the show and people opt for freelancers in order to go cheaper, and sometimes this is a terrible choice because for some specific tasks some people will need a proper <span class="text-bold">team</span> to work with. Our <span class="text-bold">team</span> makes a significant difference staying in the middle of the chain: we aim to combine the <span class="text-bold">quality</span> and <span class="text-bold">expertise</span> of a <span class="text-bold">skilled creative team</span> with all the advantages of working with people who are not tied to strict corporate rules, or can’t think out of the same lines and processes every time that a new challenge approaches.
+						p
+							span.text-bold The final goal of Guru Graphics’ team is to solve human problems using artificial intelligence to create powerful tools and solutions for humans, and other IT systems.
+						p.text-right
+								a.text-important(href="#") less
+					div.gg-inner-col-2
+						img(src='assets/images/workwithteam.jpg')
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/img-5.jpg")
+					div.gg-inner-col-2
+						h3.heading-post we are in london
+						div You can find our office in <span class="text-bold">London</span>, contact or phone us we are really friendly.
+						+address()

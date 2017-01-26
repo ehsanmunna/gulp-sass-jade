@@ -1,0 +1,75 @@
+@import 'variables';
+@import 'mixins';
+
+.gg-header{
+  @include vartical-padding(70px, 70px);
+}
+
+.gg-slogan{
+  font-size:24px;
+}
+
+
+.header-line{
+  .h-line-right{
+    margin-bottom: 40px;
+  }  
+}
+
+$menu-font-size: 19px;
+
+.gg-header-menu{
+  $vPadding: 6px;
+  $hPadding: $vPadding * 2;
+  font-size: $menu-font-size;
+  ul {
+    @extend .list-style-reset;
+  }
+
+  li {
+    display: inline-block;
+    @include vartical-padding($vPadding, $vPadding);
+    a{
+      color: $color-key-word;
+        &:hover{
+          color: $color-secondary-background;
+        }
+        &:active{
+          color: $color-secondary-background;
+        }
+    }
+
+    &:last-child {
+      a{
+        border-right: none;
+        //@extend .text-lightgray;
+      }
+    }
+  }
+
+
+
+
+  a {
+    display: block;
+    text-decoration: none;
+    @include horizantal-padding($hPadding, $hPadding);
+    color: inherit;
+    font-weight: $text-bold;
+    border-right: 1px solid transparentize($color-accent, 0.8);
+    &:hover{
+      color: $color-text-body;
+    }
+
+
+  }
+}
+
+.gg-header-search{
+  text-decoration: none;
+  @include vartical-padding(6px, 6px);
+  font-weight: $text-bold;
+  color: $color-secondary-background;
+  line-height: 32px;
+  font-size: $menu-font-size;
+}

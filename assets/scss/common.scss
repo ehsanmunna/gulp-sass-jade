@@ -1,0 +1,39 @@
+@import 'variables';
+
+.list-style-reset{
+  margin: 0;
+  padding: 0;
+  height: 0;
+  list-style: none;
+}
+
+.gg-pull-right {
+  float: right !important;
+}
+.gg-pull-left {
+  float: left !important;
+}
+.gg-hide {
+  display: none !important;
+}
+.gg-show {
+  display: block !important;
+}
+
+.h-line{
+  border: none;
+  margin:0px;
+  padding: 0px;
+  border-bottom: 1px solid $color-brand;
+  width: 60%;
+}
+
+.h-line-right{
+  @extend .h-line;
+  float: right;
+}
+
+.h-line-left{
+  @extend .h-line;
+  float: left;
+}

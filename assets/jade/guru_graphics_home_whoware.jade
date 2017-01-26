@@ -1,0 +1,34 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post identity
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						p It’s all about who we really are: we’ve got <span class="text-bold">designers</span>,<span class="text-bold">developers</span>, various nerds and creeps, and <span class="text-bold">hackers</span>. All different professions, personalities and cultures, but what’s in common is the passion for something, the will to go in the same direction and think in the same positive way. We want to <span class="text-bold">have fun and be creative</span>, we don’t want to die sitting at our desks, no way. <span class="text-bold">We want to make it our own way - go big or go home.</span>
+					div.gg-inner-col-2
+						img(src="assets/images/whoware.jpg")
+			+homeRightStatistic()
+
+		div.h-line-left
+
+		+aboutgurugraphic()
+
+		div.h-line-right
+
+		+workwithateam()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						h3.heading-post we are in london
+						p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+						+address()

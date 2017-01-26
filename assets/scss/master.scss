@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'header';
+
+body{
+  color: $color-text-body;
+  font-family: $font-family-roboto;
+  font-weight: $text-light;
+}
+
+.gg-container{
+	width: $page-large;
+	margin: auto;
+}
+
+
+@import 'footer';

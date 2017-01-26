@@ -1,0 +1,42 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-separator.gg-post-row-bottom
+			+homeleftlink()
+			div.gg-center-col
+				h2.heading-post PRODUCTS PHILOSOPHY
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						div Our idea of p roduct is based on the thoughts of <span class="text-bold">Dieter Rams</span>, who was Braun’s lead designer from 1955 to 1995 (40 years) and V itsœ in the 60s, creating the stunning product design that has revolutionized the approach to design. <span class="text-bold">Less, but better</span> Dieter Rams have inspired Sir Jony Ive, who is currently the Chief Design Officer at Apple, a Company that have made of its industrial design a worldwide trend. This philosophy has been explained and sustained by Dieter Rams by the creation of a simple set of rules to define the <span class="text-bold">“Good Design” concept , talking about the design’s involvement into the product usage and usability.</span> We have readapted this rules to be applicable to web design and development as a general philosophy, rather than a set of rules to follow. This philosophy does not want to suggest how to act or perform operations, but to introduce a new approach to the way design and development are usually thought by the professionals working on the field.
+					div.gg-inner-col-2
+						img(src="assets/images/culture.jpg")
+			div.gg-right-col
+				ul.gg-nav-info.home-nav-list
+					li.text-bold.text-keytext Guro facts
+					li.text-bold.text-keytext Founded
+					li.text-bold.text-body 2006
+					li.text-bold.text-keytext Incorporation
+					li.text-bold.text-body 4 September 2010
+					li.text-bold.text-keytext Logo canghing
+					li.text-bold.text-body 2014
+
+		div.h-line-left
+		+aboutgurugraphic()
+
+		div.h-line-right
+
+		+workwithateam2()
+
+		div.h-line-right
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					div.gg-inner-col-2
+						img(src="assets/images/london.jpg")
+					div.gg-inner-col-2
+						.address
+							h3.heading-post we are in london
+							p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+							+address()

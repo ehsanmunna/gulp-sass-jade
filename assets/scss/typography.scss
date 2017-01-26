@@ -1,0 +1,97 @@
+@mixin link($value, $hovervalue){
+  color: $value;
+  &:hover{
+    color: $hovervalue;
+  }
+}
+a.link{
+  @include link($color-text-list-orange, $color-text-body)
+}
+
+a.link-orange{
+  @include link($color-text-list-important, $color-text-body)
+}
+
+a.link-inverse{
+  @include link($color-text-body, $color-text-list-important)
+}
+a.underline-none{
+  text-decoration: none;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-bold{
+  font-weight: $text-bold
+}
+
+.key-text{
+  color: $color-kye-text;
+}
+
+.text-body{
+  color: $color-text-body;
+}
+
+.text-important{
+  color: $color-text-list-important;
+}
+
+.text-orange{
+  color: $color-text-list-orange;
+}
+
+.text-keyword{
+  color: $color-key-word;
+}
+
+.text-keytext{
+  color: $color-kye-text;
+}
+
+.pate-title{
+  font-family: $font-family-cabin;
+  font-weight: $text-semi-bold;
+  letter-spacing: 6px;
+  font-size: 45px;
+  margin-top: 15px;
+  color: $color-brand;
+  line-height: 33px;
+  text-transform: uppercase;
+}
+
+.heading-big{
+  font-family: $font-family-roboto-condensed;
+  font-weight: $text-bold;
+  font-style: italic;
+  font-size: 30px;
+  color: $color-brand;
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+.heading-medium{
+  font-family: $font-family-roboto-condensed;
+  font-weight: $text-bold;
+  font-style: italic;
+  font-size: 26px;
+  margin-bottom: 26px;
+  color: $color-brand;
+  line-height: 30px;
+}
+
+.heading-post{
+  font-family: $font-family-roboto-condensed;
+  font-weight: $text-bold;
+  font-size: 30px;
+  margin-bottom: 26px;
+  color: $color-brand;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+

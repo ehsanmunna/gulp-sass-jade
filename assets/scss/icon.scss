@@ -1,0 +1,17 @@
+.gi{
+	width: 22px;
+	height: 18px;
+	background: url('img/icon-sprite.jpg');
+	background-repeat: none;
+	display: inline-block;
+	position: relative;
+    top: 5px;
+}
+
+.gi-envelop{
+	background-position: 0px 0px;
+}
+
+.gi-mobile{
+	background-position: 22px 0px;
+}

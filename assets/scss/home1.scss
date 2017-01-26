@@ -1,0 +1,204 @@
+@import 'variables';
+@import 'mixins';
+@import 'global';
+@import 'typography';
+
+
+
+// .container {
+//     width: 1400px;
+// }
+.list-style-reset{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.primary-normal{ background-color: $primary-normal }
+
+a.text-more{
+  @extend .text-cabin;
+    &:hover{
+      @extend .text-primary;
+    }
+}
+
+
+.search-link{
+  text-decoration: none !important;
+  padding: 6px 12px;
+  display: block;
+  @extend .text-bold;
+  @extend .text-lightgray;
+    &:hover{
+      @extend .text-lightgray;
+    }
+}
+
+.section-spacing{
+  @include vartical-margin(30px, 30px);
+}
+
+.h-line{
+  border: none;
+  border-bottom: 1px solid $primary-normal;
+  width: 60%;
+}
+
+.h-line-right{
+  @extend .h-line;
+  float: right;
+}
+
+.h-line-left{
+  @extend .h-line;
+  float: left;
+}
+
+.guro-home-menu{
+  $vPadding: 6px;
+  $hPadding: $vPadding * 2;
+  ul {
+    @extend .list-style-reset;
+  }
+
+  li {
+    display: inline-block;
+    @include vartical-padding($vPadding, $vPadding);
+
+    &:last-child {
+      a{
+        border-right: none;
+        @extend .text-lightgray;
+      }
+    }
+  }
+
+
+
+  a {
+    display: block;
+    text-decoration: none;
+    @include horizantal-padding($hPadding, $hPadding);
+    color: inherit;
+    @extend .text-bold;
+    border-right: 1px solid transparentize($primary-normal, 0.8);
+    &:hover{
+      color: $text-normal;
+    }
+
+
+  }
+}
+
+#side-menu{
+  margin-top: 25px;
+}
+
+.short-statistics{
+  @extend .text-bold;
+    li{
+      padding-bottom: 3px;
+    }
+}
+
+.list-style{
+  @extend .list-style-reset;
+  
+  li { display: underline }
+
+  a {
+    display: block;
+    padding: 3px 12px;
+    text-decoration: underline;
+  }
+}
+
+.list-style-primary{
+  @include anchor-color($primary-normal)
+}
+
+.list-style-text-normal{
+  @include anchor-color($text-normal)
+}
+
+$section-top: 30px;
+$section-bottom: 40px;
+
+.post-section{
+  overflow: hidden;
+  @include vartical-margin($section-top, $section-bottom);
+  @include vartical-padding(10px, 15px);
+  @include horizantal-padding(10px, 15px);
+  @extend .text-light;
+
+  .post-header{
+      margin-top: 0;
+      text-transform: uppercase;
+      @extend .text-bold;
+      @extend .text-condensed;
+      font-size: 30px;
+  }
+
+  p{
+    //@extend .text-light;
+    font-size: $font-size + 1;
+  }
+
+  //function for image and text area for post
+  @mixin post-section-func($width){
+    $w : $width - 15px;
+    float: left;
+    width: $w;
+
+    @media screen and (max-width: 1400px) {
+      width: $w - 155;
+    }
+  }
+  
+  .post-section-image{
+    @include post-section-func(455px);
+    @include horizantal-margin;//default 15px both side
+  }
+  .post-section-text{ 
+    @include post-section-func(455px);
+  }
+}
+
+.post-section.post-border-left{
+  border-left: 1px solid $primary-normal;
+}
+
+.address-list{
+  margin-top: 100px;
+  @media screen and (max-width: $container-width) {
+      margin-top: 15px;
+    }
+
+  ul{
+    @extend .list-style-reset;
+    padding-left: 50px;
+  }
+
+  li{
+     @extend .text-primary;
+     @extend .text-cabin;
+     text-decoration: underline;
+       h4{
+          padding-left: 30px;     
+       }
+  }
+  
+}
+
+.footer-h-bar{
+  border:none;
+  border-top: 1px solid $primary-normal;
+  border-bottom: 1px solid $text-normal;
+  height: 8px;
+}
+
+.copyright{
+  font-size: 12.5px !important;
+  font-weight: normal;
+}

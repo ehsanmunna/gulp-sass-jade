@@ -1,0 +1,31 @@
+@import 'variables';
+
+$footer-group-count: 6;
+.gg-footer{
+	margin-top: 43px;
+}
+.gg-foot-double-border{
+	height: 10px;
+	border-top: 1px solid $color-brand;
+	border-bottom: 1px solid $color-dark-background;
+}
+
+.foot-list-group{
+	margin-top: 100px;
+	width: $container-size / $footer-group-count;
+	float:left;
+	font-size: 16.67px;
+	ul{
+		padding: 0;
+		list-style: none;
+		li{
+
+			line-height: 30px;
+		}
+	}
+}
+.gg-copyright{
+	margin-top:88px;
+	margin-bottom: 140px;
+	font-size: 12.5px;
+}

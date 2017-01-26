@@ -1,0 +1,37 @@
+//Page Size
+$page-large: 1400px;
+$container-size: 930px;
+
+//fonts
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-roboto-condensed: 'Roboto Condensed', sans-serif;
+$font-family-cabin: 'Cabin', sans-serif;
+$text-bold: 700;
+$text-semi-bold: 600;
+$text-light: 300;
+
+//Main Colors
+$color-accent: #E8463C;
+$color-brand: #FF914F;
+$color-background: #FFFFFF;
+$color-secondary-background: #E2E2E2;
+$color-dark-background: #343434;
+
+//Text Color
+$color-text-body: #7c7c7c;
+$color-text-list-important: #FF914F;
+$color-text-list-orange: $color-accent;
+$color-key-word: #343434;
+$color-kye-text: $color-key-word;
+
+//Block element
+$left-block-width:237px; 
+$left-block-pad-left: 66px;
+$left-block-pad-right: 28px;
+$left-block: $left-block-width - ($left-block-pad-left + $left-block-pad-right);
+$center-block: $container-size;
+$right-block-pad-left: 35px;
+$right-block-pad-right: 57px;
+$right-block: $page-large - $center-block - $left-block-width - $right-block-pad-left - $right-block-pad-right;
+
+$gellary-image-opacity: 0.5;
