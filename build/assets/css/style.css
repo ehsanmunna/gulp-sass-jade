@@ -42,7 +42,10 @@
   background-position: 0px 0px; }
 
 .gi-mobile {
-  background-position: 22px 0px; }
+  background-position: -26px 0px; }
+
+.gi-page-down {
+  background-position: -47px 0px; }
 
 a.link {
   color: #E8463C; }
@@ -455,6 +458,9 @@ a.underline-none {
   right: 15px;
   top: -10px;
   color: #FF914F; }
+
+.gg-gallary-grid img {
+  border: 2px solid #E2E2E2; }
 
 .gg-gallary-grid p {
   margin: 0; }

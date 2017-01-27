@@ -88,7 +88,7 @@ mixin workwithateam2()
 					img(src='assets/images/workwithteam.jpg')
 
 
-mixin homeform()
+mixin homeform(formName)
 	.form
 		.cross
 			img.cross-button(src='assets/images/cross.jpg')
@@ -128,7 +128,7 @@ mixin homeform()
 						span.form-star *
 				label.form-button-level
 					.text-primary
-						a.form-send.text-bold.text-important sent
+						a.form-send.text-bold.text-important send
 
 mixin homeform2()
 	.form
@@ -170,17 +170,17 @@ mixin homeform2()
 						span.form-star *
 				label.form-button-level
 					.text-primary
-						a.form-send.text-bold.text-important sent
+						a.form-send.text-bold.text-important send
 
 mixin projectGallery(items)
 	each item, i in items
-		div.gg-inner-col-3
+		div.gg-inner-col-3.gg-gallary-grid
 			img(src='assets/images/gallary/#{item.image}')
 			p #{item.caption}
 
 mixin projectGalleryOpacity(items)
 	each item, i in items
-		div.gg-inner-col-3
+		div.gg-inner-col-3.gg-gallary-grid
 			if item.opacity == false
 				img(src='assets/images/gallary/#{item.image}')
 			else
@@ -198,3 +198,4 @@ mixin address()
 				<span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
 			li
 				<span class="gi gi-mobile"></span>&nbsp; guru.graphics
+
