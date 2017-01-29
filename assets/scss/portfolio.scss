@@ -1,0 +1,19 @@
+$bottom-space: 80px;
+.gg-portfolio-grid{
+  margin-top: $bottom-space;
+  .gg-inner-col-3{
+    margin-bottom: $bottom-space;
+  }
+}
+
+
+.gg-portfolio-pop{
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+}
+
+.gg-popbg{
+	background: rgba(0,0,0, 0.75)
+}

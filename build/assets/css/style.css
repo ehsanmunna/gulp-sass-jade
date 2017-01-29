@@ -42,10 +42,7 @@
   background-position: 0px 0px; }
 
 .gi-mobile {
-  background-position: -26px 0px; }
-
-.gi-page-down {
-  background-position: -47px 0px; }
+  background-position: 22px 0px; }
 
 a.link {
   color: #E8463C; }
@@ -459,11 +456,22 @@ a.underline-none {
   top: -10px;
   color: #FF914F; }
 
-.gg-gallary-grid img {
-  border: 2px solid #E2E2E2; }
-
 .gg-gallary-grid p {
   margin: 0; }
 
 .image-opacity {
   opacity: 0.5; }
+
+.gg-portfolio-grid {
+  margin-top: 80px; }
+  .gg-portfolio-grid .gg-inner-col-3 {
+    margin-bottom: 80px; }
+
+.gg-portfolio-pop {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0; }
+
+.gg-popbg {
+  background: rgba(0, 0, 0, 0.75); }

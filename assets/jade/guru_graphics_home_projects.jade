@@ -10,9 +10,6 @@ block content
 				div.gg-inner-row-2.gg-top-post
 					- var imgs = [{image:'project-1.jpg', caption: 'Allsaints'},{image:'project-2.jpg', caption: 'The Entertainer'},{image:'project-3.jpg', caption: 'Domus ans Sons ltd.'}, {image:'slide-1.jpg', caption: 'Outside Collective'},{image:'slide-2.jpg', caption: 'Population and Sustainability'},{image:'slide-3.jpg', caption: 'Credit Choisir'}]
 					+projectGallery(imgs)
-					div.text-center
-						a
-							i.gi.gi-page-down
 			div.gg-right-col
 				ul.gg-nav-info.home-nav-list
 					li.text-bold.text-keytext Guro facts
@@ -38,6 +35,6 @@ block content
 						img(src="assets/images/london.jpg")
 					div.gg-inner-col-2
 						.address
-							h3.heading-post we are in london
+							h3.text-primary.post-header we are in london
 							p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
 							+address()

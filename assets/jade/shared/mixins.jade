@@ -1,3 +1,11 @@
+mixin head()
+	head
+		title GURU GRAPHICS
+		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
+		link(href="assets/css/style.css" rel="stylesheet")
+
 mixin feedbackbottomlink(leftlink, rightlink)
 	div.gg-inner-row-2
 		div.gg-inner-col-2
@@ -48,13 +56,12 @@ mixin aboutgurugraphic()
 						p.text-right
 							a.text-important(href="#") more
 
-mixin thehumansbehinds(img)
-	- var image = img || "img-1";
+mixin thehumansbehinds()
 	div.gg-separator.gg-post-row
 		div.gg-center-left-offset
 			div.gg-inner-row-2.gg-post
 				div.gg-inner-col-2
-					img(src="assets/images/#{image}.jpg")
+					img(src="assets/images/img-1.jpg")
 				div.gg-inner-col-2
 					h3.heading-post the humans behinds
 					div It's all aobut who we really are: we've got <span class="text-bold">designers delopers</span>, various nerds and creeps, and hackers. All defferent professions, personalities and cultures, but what's in common is the passion for something, the will to go in the same direction and think in the same positive way. to <span class="text-bold">have fun and be creative</span>we don't want to die sitting at our desks, no way. <span class="text-bold">We want to make it our own way - go big or go home.</span>
@@ -73,7 +80,7 @@ mixin workwithateam()
 						p.text-right
 							a.text-important(href="#") more
 				div.gg-inner-col-2
-					img(src='assets/images/workwithteam.jpg')
+					img(src='assets/images/img-4.jpg')
 
 mixin workwithateam2()
 	div.gg-post-row
@@ -88,7 +95,7 @@ mixin workwithateam2()
 					img(src='assets/images/workwithteam.jpg')
 
 
-mixin homeform(formName)
+mixin homeform()
 	.form
 		.cross
 			img.cross-button(src='assets/images/cross.jpg')
@@ -128,7 +135,7 @@ mixin homeform(formName)
 						span.form-star *
 				label.form-button-level
 					.text-primary
-						a.form-send.text-bold.text-important send
+						a.form-send.text-bold.text-important sent
 
 mixin homeform2()
 	.form
@@ -170,23 +177,35 @@ mixin homeform2()
 						span.form-star *
 				label.form-button-level
 					.text-primary
-						a.form-send.text-bold.text-important send
+						a.form-send.text-bold.text-important sent
 
 mixin projectGallery(items)
 	each item, i in items
-		div.gg-inner-col-3.gg-gallary-grid
+		div.gg-inner-col-3
 			img(src='assets/images/gallary/#{item.image}')
 			p #{item.caption}
 
 mixin projectGalleryOpacity(items)
 	each item, i in items
-		div.gg-inner-col-3.gg-gallary-grid
+		div.gg-inner-col-3
 			if item.opacity == false
 				img(src='assets/images/gallary/#{item.image}')
 			else
 				img.image-opacity(src='assets/images/gallary/#{item.image}')
 			p #{item.caption}
 
+mixin portfolioGallaryGrid(opacityIndex)
+	div.gg-inner-row-2.gg-portfolio-grid
+		- var imgs = [{image:'project-1.jpg', caption: 'Allsaint'},{image:'project-2.jpg', caption: 'The Entertainer'},{image:'project-3.jpg', caption: 'Domus'}, {image:'slide-1.jpg', caption: 'Outside Collective'},{image:'slide-2.jpg', caption: 'Population & Sustainabilty'},{image:'slide-3.jpg', caption: 'Chcisir'}, {image:'projects-final-1.jpg', caption: 'Find Your Job'},{image:'projects-final-2.jpg', caption: 'Chef De Ville'},{image:'projects-final-3.jpg', caption: 'Focal Point'}, {image:'projects-final-6.jpg', caption: 'London House'},{image:'projects-final-5.jpg', caption: 'Yoga'},{image:'projects-final-4.jpg', caption: 'Seba Digital'}, {image:'violetlight.jpg', caption: 'Violet Light'},{image:'upstream.jpg', caption: 'Upstream'},{image:'thepachas.jpg', caption: 'The Pachas'}]
+		- imgs[opacityIndex].opacity =  false
+		+projectGalleryOpacity(imgs)
+
+mixin portfolioGallary(opacityIndex)
+	div.gg-row
+		div.gg-center-left-offset
+			h2.heading-post our works
+			div.gg-inner-row-2.gg-portfolio-grid
+				+portfolioGallaryGrid(opacityIndex)
 mixin address()
 	div.address-list
 		ul
@@ -198,4 +217,3 @@ mixin address()
 				<span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
 			li
 				<span class="gi gi-mobile"></span>&nbsp; guru.graphics
-
