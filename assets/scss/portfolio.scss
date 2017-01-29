@@ -1,3 +1,4 @@
+@import 'typography';
 $bottom-space: 80px;
 .gg-portfolio-grid{
   margin-top: $bottom-space;
@@ -7,13 +8,31 @@ $bottom-space: 80px;
 }
 
 
+.gg-popbg{
+  background: rgba($color-text-body, .5);
+  position: relative;
+}
+
 .gg-portfolio-pop{
 	position: absolute;
 	z-index: 9999;
-	top: 0;
+	top: 450px;
 	left: 0;
 }
 
-.gg-popbg{
-	background: rgba(0,0,0, 0.75)
+$margin: 36px;
+.img-list{
+  width: 50%;
+  margin: auto;
+  ul{
+    list-style: none;
+    li{
+      float: left;
+      width: 280px;
+      height: 135px;
+      margin-left: $margin / 2;
+      margin-right: $margin / 2;
+    }
+  }
 }
+

@@ -7,110 +7,107 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
         link(href="assets/css/style.css" rel="stylesheet")
   body
-    .gg-container.gg-popbg
-        block header
-            //container for  Header section
-            div.gg-row.gg-header
-                div.gg-center-left-offset
-                    div.gg-inner-row-2
-                        div.gg-inner-col-2
-                            p
-                                img(class="img-responsive" src="assets/images/logo.jpg")
-                            p
-                                h3.text-bold.gg-slogan no project is too big, or too small for
-                                    span.text-important &nbsp;us!
-                        div.gg-inner-col-2
-                            div.gg-header-menu
-                                ul.gg-pull-right
-                                    li
-                                       a(href="#") guru
-                                    li
-                                        a(href="#") portfolio
-                                    li
-                                        a(href="#") service
-                                    li
-                                        a(href="#") studio
-                div.gg-right-col
-                    a.gg-header-search(href="#") search
-            div.gg-row.header-line 
-                hr.h-line-right
+    .gg-container
+        .gg-popbg(style="position: relative")
+            .gg-portfolio-pop
+                .gg-row
+                    .large-image
+                        img(src="assets/images/pops-up.jpg")
+                .gg-row
+                    .img-list
+                        ul
+                            li
+                                img(src="assets/images/pops-up-list-1.jpg")
+                            li
+                                img(src="assets/images/pops-up-list-1.jpg")
+            block header
+                //container for  Header section
+                div.gg-row.gg-header
+                    div.gg-center-left-offset
+                        div.gg-inner-row-2
+                            div.gg-inner-col-2
+                                p
+                                    img(class="img-responsive" src="assets/images/logo.jpg")
+                                p
+                                    h3.text-bold.gg-slogan no project is too big, or too small for
+                                        span.text-important &nbsp;us!
+                            div.gg-inner-col-2
+                                div.gg-header-menu
+                                    ul.gg-pull-right
+                                        li
+                                           a(href="#") guru
+                                        li
+                                            a(href="#") portfolio
+                                        li
+                                            a(href="#") service
+                                        li
+                                            a(href="#") studio
+                    div.gg-right-col
+                        a.gg-header-search(href="#") search
+                div.gg-row.header-line
+                    hr.h-line-right
 
 
 
-        block content
-            include shared/mixins
-            div.gg-row(style="position: relative")
-                div.gg-center-left-offset
-                    h2.heading-post our works
-                    .gg-portfolio-pop
-                        .gg-row
-                            .large-image
-                                img(src="assets/images/pops-up.jpg")
-                        .gg-row
-                            .img-list
+            block content
+                include shared/mixins
+                +portfolioGallary(0)
+
+            block foot
+                //container for footer links
+                div.gg-row.gg-footer
+                    div.gg-foot-double-border
+                        div.gg-center-left-offset
+                            div.foot-list-group
                                 ul
                                     li
-                                        img(src="assets/images/pops-up-list-1.jpg")
+                                        a.link-inverse(href="#") about guru
                                     li
-                                        img(src="assets/images/pops-up-list-1.jpg")
-                    div.gg-inner-row-2.gg-portfolio-grid
-                        +portfolioGallaryGrid(0)
+                                        a.link-inverse(href="#") portfolio
+                                    li
+                                        a.link-inverse(href="#") feedback
 
-        block foot
-            //container for footer links
-            div.gg-row.gg-footer
-                div.gg-foot-double-border
-                    div.gg-center-left-offset
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-inverse(href="#") about guru
-                                li
-                                    a.link-inverse(href="#") portfolio
-                                li
-                                    a.link-inverse(href="#") feedback
-                            
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-inverse(href="#") services
-                                li
-                                    a.link-inverse(href="#") studio
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-inverse(href="#") how we are
-                                li
-                                    a.link-inverse(href="#") what we do
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-inverse(href="#") what we believe
-                                li
-                                    a.link-inverse(href="#") our culture
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-inverse(href="#") studio
-                                li
-                                    a.link-inverse(href="#") join us
-                        div.foot-list-group
-                            ul
-                                li
-                                    a.link-orange(href="#") Sunset House, CRO 2AP
-                                li
-                                    a.link-orange(href="#") 020 8774 7155
-                                li
-                                    a.link-orange(href="#") new project&nbsp;&nbsp; 
-                                        span.gi.gi-envelop
-                                li
-                                    a.link-orange(href="#") contact us&nbsp;&nbsp; 
-                                        span.gi.gi-mobile
-            //end container for footer links
+                            div.foot-list-group
+                                ul
+                                    li
+                                        a.link-inverse(href="#") services
+                                    li
+                                        a.link-inverse(href="#") studio
+                            div.foot-list-group
+                                ul
+                                    li
+                                        a.link-inverse(href="#") how we are
+                                    li
+                                        a.link-inverse(href="#") what we do
+                            div.foot-list-group
+                                ul
+                                    li
+                                        a.link-inverse(href="#") what we believe
+                                    li
+                                        a.link-inverse(href="#") our culture
+                            div.foot-list-group
+                                ul
+                                    li
+                                        a.link-inverse(href="#") studio
+                                    li
+                                        a.link-inverse(href="#") join us
+                            div.foot-list-group
+                                ul
+                                    li
+                                        a.link-orange(href="#") Sunset House, CRO 2AP
+                                    li
+                                        a.link-orange(href="#") 020 8774 7155
+                                    li
+                                        a.link-orange(href="#") new project&nbsp;&nbsp;
+                                            span.gi.gi-envelop
+                                    li
+                                        a.link-orange(href="#") contact us&nbsp;&nbsp;
+                                            span.gi.gi-mobile
+                //end container for footer links
 
-            //container for copyright
-            div.gg-row
-                div.div.gg-center-left-offset
-                    p.gg-copyright.text-center
-                        | 2016 Guru Graphic ltd. | T&amp;C | Bedford Park - London CRO 2AP - Registered in England and Wales 08098445
-            //end container for copyright
+                //container for copyright
+                div.gg-row
+                    div.div.gg-center-left-offset
+                        p.gg-copyright.text-center
+                            | 2016 Guru Graphic ltd. | T&amp;C | Bedford Park - London CRO 2AP - Registered in England and Wales 08098445
+                //end container for copyright
