@@ -11,12 +11,13 @@ $bottom-space: 80px;
 .gg-popbg{
   background: rgba($color-text-body, .5);
   position: relative;
+  margin: 0;
 }
 
-.gg-portfolio-pop{
+.gg-image-pop{
 	position: absolute;
 	z-index: 9999;
-	top: 450px;
+	top: 400px;
 	left: 0;
 }
 

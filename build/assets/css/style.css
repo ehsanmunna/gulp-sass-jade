@@ -75,13 +75,13 @@ a.underline-none {
   color: #343434; }
 
 .text-body {
-  color: #7c7c7c; }
+  color: #7c7c7c !important; }
 
 .text-important {
-  color: #FF914F; }
+  color: #FF914F !important; }
 
 .text-orange {
-  color: #E8463C; }
+  color: #E8463C !important; }
 
 .text-keyword {
   color: #343434; }
@@ -206,6 +206,7 @@ a.underline-none {
   font-size: 19px; }
   .gg-header-menu li {
     display: inline-block;
+    position: relative;
     padding-top: 6px;
     padding-bottom: 6px; }
     .gg-header-menu li a {
@@ -216,6 +217,8 @@ a.underline-none {
         color: #E2E2E2; }
     .gg-header-menu li:last-child a {
       border-right: none; }
+    .gg-header-menu li ul {
+      position: absolute; }
   .gg-header-menu a {
     display: block;
     text-decoration: none;
@@ -239,7 +242,8 @@ a.underline-none {
 body {
   color: #7c7c7c;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0; }
 
 .gg-container {
   width: 1400px;
@@ -300,13 +304,13 @@ a.underline-none {
   color: #343434; }
 
 .text-body {
-  color: #7c7c7c; }
+  color: #7c7c7c !important; }
 
 .text-important {
-  color: #FF914F; }
+  color: #FF914F !important; }
 
 .text-orange {
-  color: #E8463C; }
+  color: #E8463C !important; }
 
 .text-keyword {
   color: #343434; }
@@ -493,13 +497,13 @@ a.underline-none {
   color: #343434; }
 
 .text-body {
-  color: #7c7c7c; }
+  color: #7c7c7c !important; }
 
 .text-important {
-  color: #FF914F; }
+  color: #FF914F !important; }
 
 .text-orange {
-  color: #E8463C; }
+  color: #E8463C !important; }
 
 .text-keyword {
   color: #343434; }
@@ -551,12 +555,13 @@ a.underline-none {
 
 .gg-popbg {
   background: rgba(124, 124, 124, 0.5);
-  position: relative; }
+  position: relative;
+  margin: 0; }
 
-.gg-portfolio-pop {
+.gg-image-pop {
   position: absolute;
   z-index: 9999;
-  top: 450px;
+  top: 400px;
   left: 0; }
 
 .img-list {
@@ -570,3 +575,10 @@ a.underline-none {
       height: 135px;
       margin-left: 18px;
       margin-right: 18px; }
+
+.feedback-nav .left-nav {
+  margin-left: -18px; }
+
+.feedback-nav .right-nav {
+  float: right;
+  margin-right: -8px; }

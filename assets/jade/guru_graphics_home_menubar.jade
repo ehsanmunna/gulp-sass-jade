@@ -1,4 +1,4 @@
-include mixins
+include shared/mixins
 doctype html
 html(lang="en")
 	head
@@ -21,13 +21,44 @@ html(lang="en")
 									h3.text-bold.gg-slogan no project is too big, or too small for
 										span.text-important &nbsp;us!
 							div.gg-inner-col-2
-								+headermenu()
+								+headermenu1()
 					div.gg-right-col
 						a.gg-header-search(href="#") search
 				div.gg-row.header-line 
 					hr.h-line-right
 
 			block content
+				div.gg-row
+					//container for slider, banner, menu and small statistic
+					div.gg-separator.gg-post-row-bottom
+						+homeleftlink()
+						div.gg-center-col
+							h2.heading-post hello we are guru!
+							div.gg-inner-row-2.gg-top-post
+								div.gg-inner-col-2
+									img(src="assets/images/img-1.jpg")
+								div.gg-inner-col-2
+									img(src="assets/images/img-2.jpg")
+						+homeRightStatistic()
+
+					div.h-line-left
+
+					+thehumansbehinds()
+					
+					div.h-line-right
+
+					+workwithateam()
+
+					div.h-line-right
+					div.gg-post-row
+						div.gg-center-left-offset
+							div.gg-inner-row-2.gg-post
+								div.gg-inner-col-2
+									img(src="assets/images/img-3.jpg")
+								div.gg-inner-col-2
+									h3.heading-post we are in london
+									div You can find our office in <span class="text-bold">London</span>, contact or phone us we are really friendly.
+									+address()
 
 			block foot
 				//container for footer links

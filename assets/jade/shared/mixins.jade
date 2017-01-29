@@ -249,3 +249,57 @@ mixin address()
 				<span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
 			li
 				<span class="gi gi-mobile"></span>&nbsp; guru.graphics
+mixin feedbackNav()
+	.gg-row
+		.gg-inner-col-2.feedback-nav
+			a.left-nav
+				img(src="assets/images/back.png")
+			a.right-nav 
+				img(src="assets/images/next.png")
+
+mixin headermenu()
+	div.gg-header-menu
+		ul.gg-pull-right
+			li
+				a(href="#") guru
+			li
+				a(href="#") portfolio
+			li
+				a(href="#") service
+			li
+				a(href="#") studio
+
+mixin headermenu1()
+	div.gg-header-menu
+		ul.gg-pull-right
+			li
+				a.text-body(href="#") guru
+					ul.gg-sub-menu
+						li
+							a.text-body(href="#") our job
+						li
+							a.text-important(href="#") feedbacks
+			li
+				a(href="#") portfolio
+			li
+				a(href="#") service
+			li
+				a(href="#") studio
+
+mixin headermenu2()
+	div.gg-header-menu
+		ul.gg-pull-right
+			li
+				a.text-body(href="#") guru
+			li
+				a(href="#") portfolio
+			li
+				a(href="#") service
+			li
+				a(href="#") studio
+					ul.gg-sub-menu.text-right
+						li
+							a.text-body(href="#") our&nbsp;studio
+						li
+							a.text-important(href="#") join&nbsp;us
+					

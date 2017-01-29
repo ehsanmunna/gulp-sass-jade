@@ -34,15 +34,15 @@ a.underline-none{
 }
 
 .text-body{
-  color: $color-text-body;
+  color: $color-text-body !important;
 }
 
 .text-important{
-  color: $color-text-list-important;
+  color: $color-text-list-important !important;
 }
 
 .text-orange{
-  color: $color-text-list-orange;
+  color: $color-text-list-orange !important;
 }
 
 .text-keyword{
