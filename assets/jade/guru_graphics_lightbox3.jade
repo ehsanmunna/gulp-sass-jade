@@ -1,0 +1,85 @@
+extends shared/layout
+include shared/mixins
+block content
+	div.gg-row
+		//container for slider, banner, menu and small statistic
+		div.gg-post-row-bottom
+			div.gg-center-left-offset
+				h2.heading-post Our Studio
+					img(src="assets/images/studio-1.jpg")
+			+homeRightStatistic()
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/studio-2.jpg")
+					div.gg-inner-col-2
+						img(src="assets/images/studio-3.jpg")
+			+studiohomeleftlink()
+			div.gg-center-col
+				h2.heading-post Our Studio
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/team1.jpg")
+						p coder/art director/web architect/ oxford university
+					div.gg-inner-col-2
+						img(src="assets/images/team2.jpg")
+						p coder/art director/web architect/ oxford university
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/team3.jpg")
+						b Boris de Melo/ Ux Design Intern
+						p An avid technology fanatic and photography hobbyist. Studied Product Design Engineering at Loughborough University.
+					div.gg-inner-col-2
+						img(src="assets/images/team4.jpg")
+						b Jag Panaich / UX UI intern
+						p Passionate about Cars and Games. Love sketching. Studied Ergonomics and Human Factors at Loughborough University.
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/team5.jpg")
+						b Julien Montagnat / Web developer intern
+						p Passionate about new technologies and music.Student in Epitech in France.
+					div.gg-inner-col-2
+						img(src="assets/images/team6.jpg")
+						b Pier Paolo Moro / Graphic Design intern
+						p All in all it’s about creativity. Art supporter, bad music taste. BA degree in Graphic and Product design at IUAV in Venice.
+				div.gg-inner-row-2.gg-top-post
+					div.gg-inner-col-2
+						img(src="assets/images/team7.jpg")
+						b Arnold Quarcoo / UX Intern
+						p Football and cars lover. Very passionate about technology. Information Technology Management graduate.
+		div.h-line-right
+
+		.gg-post-row
+			.gg-center-left-offset
+				.gg-inner-row-2.gg-post
+					h3.heading-post Join Us
+					p Position Open
+					.gg-inner-col-2
+						ul.gg-nav-list
+							li
+								a.link-orange.text-bold(href="#") SALES EXECUTIVE MANAGER
+							li
+								a.link-orange.text-bold(href="#") WEB/UX/UI DESIGNER
+							li
+								a.link-orange.text-bold(href="#") FRONT-END DEVELOPER
+
+					.gg-inner-col-2
+						img(src="assets/images/img-2.jpg")
+		div.h-line-right
+
+		div.gg-post-row
+			div.gg-center-left-offset
+				div.gg-inner-row-2.gg-post
+					h3.heading-post we are in london
+					div.gg-inner-col-2
+						img(src="assets/images/address.jpg")
+					div.gg-inner-col-2
+						ul.gg-nav-list
+							li
+								a.link-orange.text-bold(href="#") 6 Bedford Park, Croydon, London, CRO2AP
+							li
+								a.link-orange.text-bold(href="#") 02087747155
+							li
+								a.link-orange.text-bold(href="#") <span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
+							li
+								a.link-orange.text-bold(href="#") <span class="gi gi-mobile"></span>&nbsp; guru.graphics

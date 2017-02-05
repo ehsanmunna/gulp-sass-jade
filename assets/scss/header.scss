@@ -3,6 +3,17 @@
 
 .gg-header{
 	@include vartical-padding(70px, 70px);
+	.gg-center-left-offset{
+		width: $center-block + 29px;
+		margin-left: $left-block-width - 29px;
+
+		.gg-header-menu{
+			margin-right: -29px;
+		}
+	}
+	.gg-right-col{
+		padding-left: 19px;
+	}
 }
 
 .gg-slogan{
@@ -19,7 +30,7 @@
 $menu-font-size: 19px;
 
 .gg-header-menu{
-	$vPadding: 6px;
+	$vPadding: 9px;
 	$hPadding: $vPadding * 2;
 	font-size: $menu-font-size;
 	ul {
@@ -40,12 +51,12 @@ $menu-font-size: 19px;
 				}
 		}
 
-		&:last-child {
-			a{
-				border-right: none;
-				//@extend .text-lightgray;
-			}
-		}
+		//&:last-child {
+		//	a{
+		//		border-right: none;
+		//		//@extend .text-lightgray;
+		//	}
+		//}
 
 		ul{
 			position: absolute;
