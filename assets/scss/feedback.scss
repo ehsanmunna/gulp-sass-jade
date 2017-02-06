@@ -1,3 +1,4 @@
+@import "variables";
 .feedback-nav{
 	.left-nav{
 		margin-left: -18px;
@@ -7,4 +8,8 @@
 		float: right;
 		margin-right: -8px;
 	}
+}
+
+.feedback-head{
+	margin-left: $inner-col-space / 2;
 }

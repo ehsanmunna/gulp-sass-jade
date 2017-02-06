@@ -2,7 +2,7 @@
 @import 'mixins';
 
 .gg-header{
-	@include vartical-padding(70px, 70px);
+	@include vartical-padding(70px, 50px);
 	.gg-center-left-offset{
 		width: $center-block + 29px;
 		margin-left: $left-block-width - 29px;
@@ -88,6 +88,6 @@ $menu-font-size: 19px;
 	@include vartical-padding(6px, 6px);
 	font-weight: $text-bold;
 	color: $color-secondary-background;
-	line-height: 32px;
+	line-height: 40px;
 	font-size: $menu-font-size;
 }

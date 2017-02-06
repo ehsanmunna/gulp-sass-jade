@@ -10,25 +10,31 @@ mixin feedbackbottomlink(leftlink, rightlink)
 	div.gg-inner-row-2
 		div.gg-inner-col-2
 			p.text-right
-				a.text-important.text-bold.underline-none(href="#") #{leftlink}
+				a.text-orange.text-bold.underline-none(href="#") #{leftlink}
 		div.gg-inner-col-2
 			p
-				a.text-important.text-bold.underline-none(href="#") #{rightlink}
+				a.text-orange.text-bold.underline-none(href="#") #{rightlink}
+
+mixin feefbackHead(text)
+	h3.heading-post.feedback-head #{text}
+
+mixin serviceHead(text)
+	+feefbackHead(text)
 
 
 mixin homeleftlink()
 	div.gg-left-col
 		ul.gg-nav-list.home-nav-list
 			li
-				a.link-orange.text-bold(href="#") Who we are
+				a.link-orange.text-bold(href="guru_graphics_home_whoweare.html") Who we are
 			li
-				a.link-orange.text-bold(href="#") Our culture
+				a.link-orange.text-bold(href="guru_graphics_home_ourculture.html") Our culture
 			li
-				a.link-orange.text-bold(href="#") What we believe
+				a.link-orange.text-bold(href="guru_graphics_home_whatwebelieve.html") What we believe
 			li
-				a.link-orange.text-bold(href="#") What we do
+				a.link-orange.text-bold(href="guru_graphics_home_whatwedo.html") What we do
 			li
-				a.link-orange.text-bold(href="#") Project
+				a.link-orange.text-bold(href="guru_graphics_home_projects.html") Project
 
 mixin studiohomeleftlink()
 	div.gg-left-col
@@ -261,13 +267,13 @@ mixin headermenu()
 	div.gg-header-menu
 		ul.gg-pull-right
 			li
-				a(href="#") guru
+				a(href="index.html") guru
 			li
-				a(href="#") portfolio
+				a(href="guru_graphics_portfolio.html") portfolio
 			li
-				a(href="#") service
+				a(href="guru_graphic_services.html") service
 			li
-				a(href="#") studio
+				a(href="guru_graphics_studio.html") studio
 
 mixin headermenu1()
 	div.gg-header-menu
