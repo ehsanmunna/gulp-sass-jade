@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
+$header-inside-margin-top: 30px;
 .gg-header{
 	@include vartical-padding(70px, 50px);
 	.gg-center-left-offset{
@@ -9,6 +10,7 @@
 
 		.gg-header-menu{
 			margin-right: -29px;
+			margin-top: $header-inside-margin-top;
 		}
 	}
 	.gg-right-col{
@@ -85,9 +87,11 @@ $menu-font-size: 19px;
 
 .gg-header-search{
 	text-decoration: none;
-	@include vartical-padding(6px, 6px);
+	@include vartical-padding(0, 6px);
 	font-weight: $text-bold;
 	color: $color-secondary-background;
 	line-height: 40px;
 	font-size: $menu-font-size;
+	display: block;
+	margin-top: $header-inside-margin-top;
 }
