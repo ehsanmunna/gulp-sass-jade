@@ -57,6 +57,15 @@ $space-for-border: 26px;
 	margin-left: - $inner-col-space / 2;
 }
 
+
+
+.gg-inner-col-1{
+	width: $container-size - $inner-col-space;
+	margin-right: $inner-col-space / 2;
+	margin-left: $inner-col-space / 2;
+	float:left;
+}
+
 .gg-inner-col-2{
 	width: ($container-size - $inner-col-space) / 2;
 	margin-right: $inner-col-space / 2;
@@ -69,4 +78,17 @@ $space-for-border: 26px;
 	margin-right: $inner-col-space / 3;
 	margin-left: $inner-col-space / 3;
 	float:left;
+}
+
+$join-us-width-left: 308px;
+
+.join-us{
+	.gg-inner-col-left{
+		width: $join-us-width-left;
+		float:left;
+	}
+	.gg-inner-col-right{
+		width: $container-size - $join-us-width-left;
+		float:left;
+	}
 }

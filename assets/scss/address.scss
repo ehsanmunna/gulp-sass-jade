@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'typography';
+
+$address-pad: 50px;
+$addressline-pad: $address-pad - 20px;
+
+.address-list{
+  margin-top: 100px;
+
+  ul{
+    list-style: none;
+    padding-left: $address-pad;
+  }
+
+  li{
+    color: $color-brand;
+    font-family: $font-family-cabin;
+    text-decoration: underline;
+    span{
+      margin-right: 10px;
+    }
+  }
+  .address-line{
+    padding-left: $addressline-pad;
+  }
+
+}
+.contact-project{
+  @extend .address-list;
+  li{
+    color: $color-text-body;
+    font-size: 22px;
+    font-weight: $text-semi-bold;
+  }
+}
+.lightbox-address{
+  @extend .contact-project;
+  .address-line{
+    padding-left: 0;
+  }
+}

@@ -49,21 +49,6 @@ $line-height: 25px;
 	}
 }
 
-.address-list{
-  margin-top: 100px;
-
-  ul{
-  	list-style: none;
-    padding-left: 50px;
-  }
-
-  li{
-     color: $color-brand;
-     font-family: $font-family-cabin;
-     text-decoration: underline;
-       h4{
-          padding-left: 30px;
-       }
-  }
-  
+.more-link{
+	padding-top: 35px;
 }
