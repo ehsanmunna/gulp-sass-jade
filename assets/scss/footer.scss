@@ -1,6 +1,7 @@
 @import 'variables';
 
 $footer-group-count: 6;
+$footer-joinus-address-gap: 35px;
 .gg-footer{
 	margin-top: 75px;
 }
@@ -22,6 +23,12 @@ $footer-group-count: 6;
 			line-height: 30px;
 		}
 	}
+}
+.footer-studio-joinus{
+	width: $container-size / $footer-group-count - $footer-joinus-address-gap
+}
+.footer-studio-address{
+	width: $container-size / $footer-group-count + $footer-joinus-address-gap
 }
 .gg-copyright{
 	margin-top:88px;

@@ -1,6 +1,11 @@
 @import 'variables';
 @import 'typography';
 
+@mixin positionandheight($height){
+	float: left;
+	min-height: $height;
+	position: relative;
+}
 
 $line-height: 25px;
 .gg-nav-list{
@@ -54,4 +59,12 @@ $line-height: 25px;
 	position: absolute;
 	right:0;
 	bottom:0;
+}
+
+.the-human-behind{
+	@include positionandheight($height-the-heman-behind);
+}
+
+.work-with-team{
+	@include positionandheight($height-work-with-team);
 }

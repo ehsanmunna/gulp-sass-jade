@@ -58,31 +58,28 @@ $space-for-border: 26px;
 	margin-left: - $inner-col-space / 2;
 }
 
-@mixin positionandheight(){
-	float: left;
-	min-height: $blocks-height;
-	position: relative;
-}
-
 .gg-inner-col-1{
 	width: $container-size - $inner-col-space;
 	margin-right: $inner-col-space / 2;
 	margin-left: $inner-col-space / 2;
-	@include positionandheight();
+	float: left;
+	//@include positionandheight();
 }
 
 .gg-inner-col-2{
 	width: ($container-size - $inner-col-space) / 2;
 	margin-right: $inner-col-space / 2;
 	margin-left: $inner-col-space / 2;
-	@include positionandheight();
+	float: left;
+	//@include positionandheight();
 }
 
 .gg-inner-col-3{
 	width: ($container-size - $inner-col-space) / 3;
 	margin-right: $inner-col-space / 3;
 	margin-left: $inner-col-space / 3;
-	@include positionandheight();
+	float: left;
+	//@include positionandheight();
 }
 
 $join-us-width-left: 308px;
