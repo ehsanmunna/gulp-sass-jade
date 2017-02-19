@@ -1,0 +1,105 @@
+// Created by ehsanmunna on 2/19/2017.
+include mixins
+
+mixin weareinlondon()
+    div.gg-post-row
+        div.gg-center-left-offset
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/img-5.jpg")
+                div.gg-inner-col-2.we-are-in-london-sm
+                    h3.heading-post we are in london
+                    div You can find our office in <span class="text-bold">London</span>, contact or phone us we are really friendly.
+                    +address()
+
+mixin weareinlondon2()
+    div.gg-post-row
+        div.gg-center-left-offset
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/london.jpg")
+                div.gg-inner-col-2.we-are-in-london-md
+                    .address
+                        h3.text-primary.post-header we are in london
+                        p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        +address2()
+
+mixin weareinlondon3()
+    div.gg-post-row
+        div.gg-center-left-offset
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/london.jpg")
+                div.gg-inner-col-2.we-are-in-london-md
+                    h3.heading-post we are in london
+                    p Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                    +address2()
+                    p.text-right
+                        a.text-important.more-link(href="#") more
+
+
+mixin weareinlondon4()
+    div.gg-post-row
+        div.gg-center-left-offset
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/img-3.jpg")
+                div.gg-inner-col-2.we-are-in-london-md
+                    h3.heading-post we are in london
+                    div You can find our office in <span class="text-bold">London</span>, contact or phone us we are really friendly.
+                    .large-address
+                        +address()
+
+mixin weareinlondon5()
+    div.gg-post-row
+        div.gg-center-left-offset
+            div.gg-inner-row-2.gg-post
+                h3.heading-post we are in london
+                div.gg-inner-col-2
+                    img(src="assets/images/address.jpg")
+                div.gg-inner-col-2
+                    ul.gg-nav-list
+                        li
+                            a.link-orange.text-bold(href="#") 6 Bedford Park, Croydon, London, CRO2AP
+                        li
+                            a.link-orange.text-bold(href="#") 02087747155
+                        li
+                            a.link-orange.text-bold(href="#") <span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
+                        li
+                            a.link-orange.text-bold(href="#") <span class="gi gi-mobile"></span>&nbsp; guru.graphics
+                    .lightbox-address
+                        +address2()
+
+mixin weareinlondonWithForm()
+    div.gg-post-row
+        div.gg-center-left-offset(style="position: relative")
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/london.jpg")
+                div.gg-inner-col-2
+                    +homeform()
+
+                    .address
+                        h3.text-primary.post-header we are in london
+                        p
+                            | You can find our office in
+                            span.text-bold London
+                            | , contact or phone us we are really friendly.
+                        +address2()
+
+mixin weareinlondonWithForm2()
+    div.gg-post-row
+        div.gg-center-left-offset(style="position: relative")
+            div.gg-inner-row-2.gg-post
+                div.gg-inner-col-2
+                    img(src="assets/images/london.jpg")
+                div.gg-inner-col-2
+                    +homeform2()
+
+                    .address
+                        h3.text-primary.post-header we are in london
+                        p
+                            | You can find our office in
+                            span.text-bold London
+                            | , contact or phone us we are really friendly.
+                        +address2()

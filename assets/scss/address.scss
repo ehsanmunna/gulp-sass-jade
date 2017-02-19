@@ -4,9 +4,22 @@
 $address-pad: 50px;
 $addressline-pad: $address-pad - 20px;
 
-.address-list{
-  margin-top: 100px;
+.we-are-in-london-sm{
+  @include positionandheight($height-we-are-in-london-small);
+}
 
+.we-are-in-london-md{
+  @include positionandheight($height-we-are-in-london-medium);
+}
+
+.we-are-in-london-lg{
+  @include positionandheight($height-we-are-in-london-large);
+}
+
+.address-list{
+  position: absolute;
+  bottom: -24px;
+  left: 0;
   ul{
     list-style: none;
     padding-left: $address-pad;
@@ -27,6 +40,7 @@ $addressline-pad: $address-pad - 20px;
 }
 .contact-project{
   @extend .address-list;
+  bottom: 50px;
   li{
     color: $color-text-body;
     font-size: 22px;
@@ -38,4 +52,8 @@ $addressline-pad: $address-pad - 20px;
   .address-line{
     padding-left: 0;
   }
+}
+
+.large-address{
+  font-size: 1.3em;
 }

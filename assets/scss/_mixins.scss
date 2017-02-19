@@ -1,3 +1,8 @@
+@mixin positionandheight($height){
+    float: left;
+    min-height: $height;
+    position: relative;
+}
 @mixin horizantal-margin($left: 15px, $right: 15px){
     margin-left: $left;
     margin-right: $right;
