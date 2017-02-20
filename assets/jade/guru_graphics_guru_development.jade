@@ -1,7 +1,7 @@
 extends shared/feedbackMaster
 include shared/mixins
 block feedback-content
-	div.gg-center-col
+	div.gg-center-col.feedback-post
 		div.gg-inner-row-2.gg-top-post
 			+feefbackHead("development")
 			div.gg-inner-col-2
@@ -10,4 +10,3 @@ block feedback-content
 			div.gg-inner-col-2
 				img(src="assets/images/development.jpg")
 		+feedbackbottomlink("back", "optimisation")
-			

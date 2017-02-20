@@ -1,4 +1,12 @@
 @import "variables";
+
+$beat-testing-height: 627px;
+$design-development-height: 547px;
+
+$feedback-font-size: 17px;
+$feedback-line-height: 27px;
+$feedback-post-text-height: 270px;
+
 .feedback-nav{
 	.left-nav{
 		margin-left: -18px;
@@ -12,4 +20,23 @@
 
 .feedback-head{
 	margin-left: $inner-col-space / 2;
+}
+
+.beat-testing{
+	position: relative;
+	min-height: $beat-testing-height;
+	.navigation{
+		position: absolute;
+		bottom: 0;
+	}
+}
+
+.feedback-post{
+	@extend .beat-testing;
+	min-height: $design-development-height;
+}
+.feedback-post-text{
+	font-size: $feedback-font-size;
+	line-height: $feedback-line-height;
+	min-height: $feedback-post-text-height;
 }
