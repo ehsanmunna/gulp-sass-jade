@@ -60,9 +60,14 @@ $menu-font-size: 19px;
 		//	}
 		//}
 
-		ul{
+		ul.gg-sub-menu{
 			position: absolute;
-			
+			right:0;
+			li{
+				a{
+					border-right: none;
+				}
+			}
 		}
 	}
 

@@ -161,36 +161,30 @@ mixin homeform()
 			.heading.text-important
 				h3.text-bold I have a project
 			form
-				label
-					.text-form First Name
-					div(style="position: relative")
-						input.highwidth(type='text', name='fname')
-						span.form-star *
-				label
-					.text-form Last Name
-					div(style="position: relative")
-						input.highwidth(type='text', name='lname')
-						span.form-star *
-				label
-					.text-form Email Address
-					div(style="position: relative")
-						input.highwidth(type='text', name='eename')
-						span.form-star *
-				label
-					.text-form Phone Number
-					div(style="position: relative")
-						input.highwidth(type='text', name='pname')
-						span.form-star *
-				label
-					.text-form Subject
-					div(style="position: relative")
-						input.highwidth(type='text', name='sname')
-						span.form-star *
-				label
-					.text-form Project Detalis
-					div(style="position: relative")
-						input.high-width(type='textarea', name='pname')
-						span.form-star *
+				label.text-form First Name
+				div(style="position: relative")
+					input.highwidth(type='text', name='fname')
+					span.form-star *
+				label.text-form Last Name
+				div(style="position: relative")
+					input.highwidth(type='text', name='lname')
+					span.form-star *
+				label.text-form.form-label Email Address
+				div(style="position: relative")
+					input.highwidth(type='text', name='eename')
+					span.form-star *
+				label.text-form.form-label Phone Number
+				div(style="position: relative")
+					input.highwidth(type='text', name='pname')
+					span.form-star *
+				label.text-form.form-label Subject
+				div(style="position: relative")
+					input.highwidth(type='text', name='sname')
+					span.form-star *
+				label.text-form.form-label Project Detalis
+				div(style="position: relative")
+					input.high-width(type='textarea', name='pname')
+					span.form-star *
 				label.form-button-level
 					.text-primary
 						a.form-send.text-bold.text-important sent
@@ -203,36 +197,36 @@ mixin homeform2()
 			.heading.text-important
 				h3.text-bold Contact us
 			form
-				label
-					.text-form First Name
-					div(style="position: relative")
-						input.highwidth(type='text', name='fname')
-						span.form-star *
-				label
-					.text-form Last Name
-					div(style="position: relative")
-						input.highwidth(type='text', name='lname')
-						span.form-star *
-				label
-					.text-form Email Address
-					div(style="position: relative")
-						input.highwidth(type='text', name='eename')
-						span.form-star *
-				label
-					.text-form Phone Number
-					div(style="position: relative")
-						input.highwidth(type='text', name='pname')
-						span.form-star *
-				label
-					.text-form Subject
-					div(style="position: relative")
-						input.highwidth(type='text', name='sname')
-						span.form-star *
-				label
-					.text-form Message Detalis
-					div(style="position: relative")
-						input.high-width(type='textarea', name='pname')
-						span.form-star *
+				label.text-form First Name
+				div(style="position: relative")
+					input.highwidth(type='text', name='fname')
+					span.form-star *
+
+				label.text-form Last Name
+				div(style="position: relative")
+					input.highwidth(type='text', name='lname')
+					span.form-star *
+
+				label.text-form.form-label Email Address
+				div(style="position: relative")
+					input.highwidth(type='text', name='eename')
+					span.form-star *
+
+				label.text-form.form-label Phone Number
+				div(style="position: relative")
+					input.highwidth(type='text', name='pname')
+					span.form-star *
+
+				label.text-form.form-label Subject
+				div(style="position: relative")
+					input.highwidth(type='text', name='sname')
+					span.form-star *
+
+				label.text-form.form-label Message Detalis
+				div(style="position: relative")
+					input.high-width(type='textarea', name='pname')
+					span.form-star *
+
 				label.form-button-level
 					.text-primary
 						a.form-send.text-bold.text-important sent
@@ -304,7 +298,7 @@ mixin headermenu1()
 		ul.gg-pull-right
 			li
 				a.text-body(href="#") guru
-					ul.gg-sub-menu
+					ul.gg-sub-menu.text-right
 						li
 							a.text-body(href="#") our job
 						li
