@@ -54,10 +54,11 @@ mixin weareinlondon5()
     div.gg-post-row
         div.gg-center-left-offset
             div.gg-inner-row-2.gg-post
-                h3.heading-post we are in london
+                .gg-inner-col-1
+                    h3.heading-post we are in london
                 div.gg-inner-col-2
                     img(src="assets/images/address.jpg")
-                div.gg-inner-col-2
+                div.gg-inner-col-2.we-are-in-london-lg
                     ul.gg-nav-list
                         li
                             a.link-orange.text-bold(href="#") 6 Bedford Park, Croydon, London, CRO2AP
@@ -67,8 +68,8 @@ mixin weareinlondon5()
                             a.link-orange.text-bold(href="#") <span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
                         li
                             a.link-orange.text-bold(href="#") <span class="gi gi-mobile"></span>&nbsp; guru.graphics
-                    .lightbox-address
-                        +address2()
+
+                    +address2()
 
 mixin weareinlondonWithForm()
     div.gg-post-row

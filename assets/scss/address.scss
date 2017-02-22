@@ -14,6 +14,12 @@ $addressline-pad: $address-pad - 20px;
 
 .we-are-in-london-lg{
   @include positionandheight($height-we-are-in-london-large);
+  .gg-nav-list{
+    margin: 0;
+  }
+  .contact-project{
+    bottom: 0;
+  }
 }
 
 .address-list{

@@ -1,0 +1,9 @@
+@import "mixins";
+
+$service-post-height: 993px;
+
+.service-post{
+  @include positionandheight($service-post-height);
+  @extend .gg-post;
+  margin-top: 0;
+}

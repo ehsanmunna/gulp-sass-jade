@@ -5,8 +5,12 @@ block content
 		//container for slider, banner, menu and small statistic
 		div.gg-post-row-bottom
 			div.gg-center-left-offset
-				h2.heading-post Our Studio
-					img(src="assets/images/studio-1.jpg")
+				.gg-inner-row-2
+				.gg-inner-col-1
+					h2.heading-post Our Studio
+				.gg-inner-row-2
+					.gg-inner-col-1
+						img(src="assets/images/studio-1.jpg")
 			+homeRightStatistic()
 			div.gg-center-left-offset
 				div.gg-inner-row-2.gg-top-post
@@ -49,40 +53,7 @@ block content
 						p Football and cars lover. Very passionate about technology. Information Technology Management graduate.
 		div.h-line-right
 
-		div.gg-post-row
-			div.gg-center-left-offset
-				div.gg-inner-row-2.gg-post.join-us
-					.gg-inner-col-1
-						h3.heading-post Join Us
-						p Position Open
-					.gg-inner-col-left
-						ul.gg-nav-list.home-nav-list
-							li
-								a.link-orange.text-bold(href="#") SALES EXECUTIVE MANAGER
-							li
-								a.link-orange.text-bold(href="#") WEB/UX/UI DESIGNER
-							li
-								a.link-orange.text-bold(href="#") FRONT-END DEVELOPER
-
-					div.gg-inner-col-right
-						img(src="assets/images/joinUs.jpg")
+		+joinUs()
 		div.h-line-right
 
-		div.gg-post-row
-			div.gg-center-left-offset
-				div.gg-inner-row-2.gg-post
-					h3.heading-post we are in london
-					div.gg-inner-col-2
-						img(src="assets/images/address.jpg")
-					div.gg-inner-col-2
-						ul.gg-nav-list
-							li
-								a.link-orange.text-bold(href="#") 6 Bedford Park, Croydon, London, CRO2AP
-							li
-								a.link-orange.text-bold(href="#") 02087747155
-							li
-								a.link-orange.text-bold(href="#") <span class="gi gi-envelop"></span>&nbsp; hello@gurugraphic.co.uk
-							li
-								a.link-orange.text-bold(href="#") <span class="gi gi-mobile"></span>&nbsp; guru.graphics
-						.lightbox-address
-							+address2()
+		+weareinlondon5()

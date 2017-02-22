@@ -23,6 +23,9 @@
 //right column for menu and information
 .gg-right-col{
 	@include columnFunc($right-block, $right-block-pad-left, $right-block-pad-right);
+	.gg-nav-list{
+		margin: 0;
+	}
 }
 
 $space-for-border: 26px;
@@ -86,11 +89,14 @@ $join-us-width-left: 308px;
 
 .join-us{
 	.gg-inner-col-left{
-		width: $join-us-width-left;
-		float:left;
+		@extend .gg-inner-col-2;
+		width: $join-us-width-left  - $inner-col-space;
 	}
 	.gg-inner-col-right{
-		width: $container-size - $join-us-width-left;
-		float:left;
+		@extend .gg-inner-col-2;
+		width: $container-size - $join-us-width-left  - $inner-col-space;
+	}
+	.home-nav-list{
+		margin: 0;
 	}
 }
