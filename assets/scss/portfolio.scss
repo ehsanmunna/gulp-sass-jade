@@ -7,18 +7,20 @@ $bottom-space: 80px;
   }
 }
 
-
-.gg-popbg{
+.gg-popbg {
   background: rgba($color-text-body, .5);
-  position: relative;
+  position: absolute;
   margin: 0;
+  min-height: 3240px;
+  width: 1400px;
+  z-index:3;
 }
 
 .gg-image-pop{
 	position: absolute;
-	z-index: 9999;
-	top: 400px;
+	top: 300px;
 	left: 0;
+    z-index:4;
 }
 
 $margin: 36px;

@@ -2,140 +2,141 @@ include shared/mixins
 include shared/weareinlondon
 doctype html
 html(lang="en")
-	head
-		title GURU GRAPHICS
-		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet")
-		link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet")
-		link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
-		link(href="assets/css/style.css" rel="stylesheet")
-	body
-		.gg-container
-			.gg-popbg
-				.gg-image-pop
-					.gg-row
-						.large-image
-							img(src="assets/images/pops-up.jpg")
-					.gg-row
-						.img-list
-							ul
-								li
-									img(src="assets/images/pops-up-list-1.jpg")
-								li
-									img(src="assets/images/pops-up-list-2.jpg")
-				block header
-					//container for  Header section
-					div.gg-row.gg-header
-						div.gg-center-left-offset
-							div.gg-inner-row-2
-								div.gg-inner-col-2
-									p
-										img(class="img-responsive" src="assets/images/logo.jpg")
-									p
-										h3.text-bold.gg-slogan no project is too big, or too small for
-											span.text-important &nbsp;us!
-								div.gg-inner-col-2
-									div.gg-header-menu
-										ul.gg-pull-right
-											li
-												a(href="#") guru
-											li
-												a(href="#") portfolio
-											li
-												a(href="#") service
-											li
-												a(href="#") studio
-						div.gg-right-col
-							a.gg-header-search(href="#") search
-					div.gg-row.header-line
-						hr.h-line-right
+    head
+        title GURU GRAPHICS
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
+        link(href="assets/css/style.css" rel="stylesheet")
+    body
+        .gg-container
+            div
+                .gg-popbg
+                    .gg-image-pop
+                        .gg-row
+                            .large-image
+                                img(src="assets/images/pops-up.jpg")
+                        .gg-row
+                            .img-list
+                                ul
+                                    li
+                                        img(src="assets/images/pops-up-list-1.jpg")
+                                    li
+                                        img(src="assets/images/pops-up-list-2.jpg")
+                block header
+                    //container for  Header section
+                    div.gg-row.gg-header
+                        div.gg-center-left-offset
+                            div.gg-inner-row-2
+                                div.gg-inner-col-2
+                                    p
+                                        img(class="img-responsive" src="assets/images/logo.jpg")
+                                    p
+                                        h3.text-bold.gg-slogan no project is too big, or too small for
+                                            span.text-important &nbsp;us!
+                                div.gg-inner-col-2
+                                    div.gg-header-menu
+                                        ul.gg-pull-right
+                                            li
+                                                a(href="#") guru
+                                            li
+                                                a(href="#") portfolio
+                                            li
+                                                a(href="#") service
+                                            li
+                                                a(href="#") studio
+                        div.gg-right-col
+                            a.gg-header-search(href="#") search
+                    div.gg-row.header-line
+                        hr.h-line-right
 
 
 
-				block content
-					div.gg-row
-						//container for slider, banner, menu and small statistic
-						div.gg-separator.gg-post-row-bottom
-							+homeleftlink()
-							div.gg-center-col
-								h2.heading-post HELLO WE ARE GURU!
-								div.gg-inner-row-2.gg-top-post.gg-gallary-grid
-									- var imgs = [{image:'slide-1.jpg', caption: 'Allsaints'},{image:'slide-2.jpg', caption: 'The Entertainer'},{image:'slide-3.jpg', caption: 'Domus ans Sons ltd.'}, {image:'projects-final-1.jpg', caption: 'Outside Collective'},{image:'projects-final-2.jpg', caption: 'Population and Sustainability'},{image:'projects-final-3.jpg', caption: 'Credit Choisir'}]
-									+projectGallery(imgs)
-							div.gg-right-col
-								ul.gg-nav-info.home-nav-list
-									li.text-bold.text-keytext Guro facts
-									li.text-bold.text-keytext Founded
-									li.text-bold.text-body 2006
-									li.text-bold.text-keytext Incorporation
-									li.text-bold.text-body 4 September 2010
-									li.text-bold.text-keytext Logo canghing
-									li.text-bold.text-body 2014
+                block content
+                    div.gg-row
+                        //container for slider, banner, menu and small statistic
+                        div.gg-separator.gg-post-row-bottom
+                            +homeleftlink()
+                            div.gg-center-col
+                                h2.heading-post HELLO WE ARE GURU!
+                                div.gg-inner-row-2.gg-top-post.gg-gallary-grid
+                                    - var imgs = [{image:'slide-1.jpg', caption: 'Allsaints'},{image:'slide-2.jpg', caption: 'The Entertainer'},{image:'slide-3.jpg', caption: 'Domus ans Sons ltd.'}, {image:'projects-final-1.jpg', caption: 'Outside Collective'},{image:'projects-final-2.jpg', caption: 'Population and Sustainability'},{image:'projects-final-3.jpg', caption: 'Credit Choisir'}]
+                                    +projectGallery(imgs)
+                            div.gg-right-col
+                                ul.gg-nav-info.home-nav-list
+                                    li.text-bold.text-keytext Guro facts
+                                    li.text-bold.text-keytext Founded
+                                    li.text-bold.text-body 2006
+                                    li.text-bold.text-keytext Incorporation
+                                    li.text-bold.text-body 4 September 2010
+                                    li.text-bold.text-keytext Logo canghing
+                                    li.text-bold.text-body 2014
 
-						div.h-line-left
-						+aboutgurugraphic()
+                        div.h-line-left
+                        +aboutgurugraphic()
 
-						div.h-line-right
+                        div.h-line-right
 
-						+workwithateam2()
+                        +workwithateam2()
 
-						div.h-line-right
-						+weareinlondon3()
+                        div.h-line-right
+                        +weareinlondon3()
 
-				block foot
-					//container for footer links
-					div.gg-row.gg-footer
-						div.gg-foot-double-border
-							div.gg-center-left-offset
-								div.foot-list-group
-									ul
-										li
-											a.link-inverse(href="#") about guru
-										li
-											a.link-inverse(href="#") portfolio
-										li
-											a.link-inverse(href="#") feedback
+                block foot
+                    //container for footer links
+                    div.gg-row.gg-footer
+                        div.gg-foot-double-border
+                            div.gg-center-left-offset
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-inverse(href="#") about guru
+                                        li
+                                            a.link-inverse(href="#") portfolio
+                                        li
+                                            a.link-inverse(href="#") feedback
 
-								div.foot-list-group
-									ul
-										li
-											a.link-inverse(href="#") services
-										li
-											a.link-inverse(href="#") studio
-								div.foot-list-group
-									ul
-										li
-											a.link-inverse(href="#") how we are
-										li
-											a.link-inverse(href="#") what we do
-								div.foot-list-group
-									ul
-										li
-											a.link-inverse(href="#") what we believe
-										li
-											a.link-inverse(href="#") our culture
-								div.foot-list-group
-									ul
-										li
-											a.link-inverse(href="#") studio
-										li
-											a.link-inverse(href="#") join us
-								div.foot-list-group
-									ul
-										li
-											a.link-orange(href="#") Sunset House, CRO 2AP
-										li
-											a.link-orange(href="#") 020 8774 7155
-										li
-											a.link-orange(href="#") new project&nbsp;&nbsp;
-												span.gi.gi-envelop
-										li
-											a.link-orange(href="#") contact us&nbsp;&nbsp;
-												span.gi.gi-mobile
-					//end container for footer links
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-inverse(href="#") services
+                                        li
+                                            a.link-inverse(href="#") studio
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-inverse(href="#") how we are
+                                        li
+                                            a.link-inverse(href="#") what we do
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-inverse(href="#") what we believe
+                                        li
+                                            a.link-inverse(href="#") our culture
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-inverse(href="#") studio
+                                        li
+                                            a.link-inverse(href="#") join us
+                                div.foot-list-group
+                                    ul
+                                        li
+                                            a.link-orange(href="#") Sunset House, CRO 2AP
+                                        li
+                                            a.link-orange(href="#") 020 8774 7155
+                                        li
+                                            a.link-orange(href="#") new project&nbsp;&nbsp;
+                                                span.gi.gi-envelop
+                                        li
+                                            a.link-orange(href="#") contact us&nbsp;&nbsp;
+                                                span.gi.gi-mobile
+                    //end container for footer links
 
-					//container for copyright
-					div.gg-row
-						div.div.gg-center-left-offset
-							p.gg-copyright.text-center
-								| 2016 Guru Graphic ltd. | T&amp;C | Bedford Park - London CRO 2AP - Registered in England and Wales 08098445
-					//end container for copyright
+                    //container for copyright
+                    div.gg-row
+                        div.div.gg-center-left-offset
+                            p.gg-copyright.text-center
+                                | 2016 Guru Graphic ltd. | T&amp;C | Bedford Park - London CRO 2AP - Registered in England and Wales 08098445
+                    //end container for copyright
