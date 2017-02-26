@@ -53,7 +53,7 @@ $line-height: 25px;
 	//padding-top: 35px;
 	position: absolute;
 	right:0;
-	bottom:0;
+	bottom:-7px;
 }
 
 .the-human-behind{
@@ -62,4 +62,8 @@ $line-height: 25px;
 
 .work-with-team{
 	@include positionandheight($height-work-with-team);
+}
+
+.work-with-team-md{
+	@include positionandheight($height-work-with-team-md);
 }
