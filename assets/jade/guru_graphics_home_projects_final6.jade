@@ -10,15 +10,7 @@ block content
 				div.gg-inner-row-2.gg-top-post.gg-gallary-grid
 					- var imgs = [{image:'projects-final-grey-1.jpg', caption: 'Find Your Job'},{image:'projects-final-grey-2.jpg', caption: 'Chef De Ville'},{image:'projects-final-grey-3.jpg', caption: 'Focalpoint'}, {image:'projects-final-grey-4.jpg', caption: 'London House'},{image:'projects-final-grey-5.jpg', caption: 'Yoga Team'},{image:'projects-final-6.jpg', caption: 'Seba Digital', opacity: false}]
 					+projectGalleryOpacity(imgs)
-			div.gg-right-col
-				ul.gg-nav-info.home-nav-list
-					li.text-bold.text-keytext Guro facts
-					li.text-bold.text-keytext Founded
-					li.text-bold.text-body 2006
-					li.text-bold.text-keytext Incorporation
-					li.text-bold.text-body 4 September 2010
-					li.text-bold.text-keytext Logo canghing
-					li.text-bold.text-body 2014
+			+rightStatistic2()
 
 		div.h-line-left
 		+aboutgurugraphic()

@@ -10,18 +10,19 @@ html(lang="en")
 		link(href="assets/css/style.css" rel="stylesheet")
 	body
 		.gg-container
-			.gg-popbg
-				.gg-image-pop
-					.gg-row
-						.large-image
-							img(src="assets/images/pops-up.jpg")
-					.gg-row
-						.img-list
-							ul
-								li
-									img(src="assets/images/pops-up-list-1.jpg")
-								li
-									img(src="assets/images/pops-up-list-2.jpg")
+			div
+				.gg-popbg
+					.gg-image-pop
+						.gg-row
+							.large-image
+								img(src="assets/images/pops-up.jpg")
+						.gg-row
+							.img-list
+								ul
+									li
+										img(src="assets/images/pops-up-list-1.jpg")
+									li
+										img(src="assets/images/pops-up-list-2.jpg")
 				block header
 					//container for  Header section
 					div.gg-row.gg-header
@@ -132,7 +133,6 @@ html(lang="en")
 											a.link-orange(href="#") contact us&nbsp;&nbsp;
 												span.gi.gi-mobile
 					//end container for footer links
-
 					//container for copyright
 					div.gg-row
 						div.div.gg-center-left-offset
