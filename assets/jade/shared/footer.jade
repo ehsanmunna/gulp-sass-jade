@@ -1,0 +1,104 @@
+//Created by ehsanmunna on 2/28/2017.
+
+mixin footerAddressWithOutIcon()
+    .foot-list-group.footer-studio-address
+        ul
+            li
+                a.link-orange(href="#") Sunset House, CRO 2AP
+            li
+                a.link-orange(href="#") 020 8774 7155
+            li
+                a.link-orange(href="#") new project
+            li
+                a.link-orange(href="#") contact us
+
+mixin footerAddressWithIcon()
+    .foot-list-group.footer-studio-address
+        ul
+            li
+                a.link-orange(href="#") Sunset House, CRO 2AP
+            li
+                a.link-orange(href="#") 020 8774 7155
+            li
+                a.link-orange(href="#") new project&nbsp;&nbsp;
+                    span.gi.gi-envelop
+            li
+                a.link-orange(href="#") contact us&nbsp;&nbsp;
+                    span.gi.gi-mobile
+
+mixin footerMiddle3Groups()
+    .foot-list-group
+        ul
+            li
+                a.link-inverse(href="#") services
+            li
+                a.link-inverse(href="#") studio
+    .foot-list-group
+        ul
+            li
+                a.link-inverse(href="#") who we are
+            li
+                a.link-inverse(href="#") what we do
+    .foot-list-group
+        ul
+            li
+                a.link-inverse(href="#") what we believe
+            li
+                a.link-inverse(href="#") our culture
+
+mixin footerLeftGroup1()
+    .foot-list-group
+        ul
+            li
+                a.link-inverse(href="#") about guru
+            li
+                a.link-inverse(href="#") portfolio
+            li
+                a.link-inverse(href="#") feedback
+
+    +footerMiddle3Groups()
+    .foot-list-group.footer-studio-joinus
+        ul
+            li
+                a.link-inverse(href="#") studio
+            li
+                a.link-inverse(href="#") join us
+
+mixin footerLeftGroup2()
+    .foot-list-group
+        ul
+            li
+                a.link-inverse(href="#") about guru
+            li
+                a.link-inverse(href="#") portfolio
+    +footerMiddle3Groups()
+    .foot-list-group.footer-studio-joinus
+        ul
+            li
+                a.link-inverse(href="#") project
+
+
+
+mixin footer1()
+    .gg-row.gg-footer
+        .gg-center-left-offset
+            +footerLeftGroup2()
+            +footerAddressWithOutIcon()
+
+mixin footer2()
+    div.gg-row.gg-footer
+        div.gg-center-left-offset
+            +footerLeftGroup2()
+            +footerAddressWithIcon()
+
+mixin footer3()
+    .gg-row.gg-footer
+        .gg-center-left-offset
+            +footerLeftGroup1()
+            +footerAddressWithIcon()
+
+mixin footer4()
+    div.gg-row.gg-footer
+        div.gg-center-left-offset
+            +footerLeftGroup1()
+            +footerAddressWithOutIcon()

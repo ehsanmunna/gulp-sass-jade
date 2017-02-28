@@ -1,16 +1,14 @@
 extends shared/feedbackMaster
 block feedback-content
-	div.gg-center-col.feedback-post
+	div.gg-center-col
 		div.gg-inner-row-2.gg-top-post
 			+feefbackHead("our job")
-			div.gg-inner-col-2
+			div.gg-inner-col-2.feedback-post
 				div Here at Guru Graphics we enjoy working in a relaxed and friendly environment, with high quality standards. Here's a general overview on our approach to the most common web development-related jobs, so you know what you will get while working with us.
+				p
+					a.text-orange.more-link.underline-none.text-bold(href="#") planning
 			div.gg-inner-col-2
 				img(src="assets/images/ourjob.jpg")
-		div.gg-inner-row-2
-			div.gg-inner-col-2 &nbsp;
-			div.gg-inner-col-2
-				p
-					a.text-bold.text-important.underline-none(href="#") planning
+
 block foot
-	+footer2()
+	+footer1()

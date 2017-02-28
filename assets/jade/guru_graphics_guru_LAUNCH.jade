@@ -1,15 +1,15 @@
 extends shared/feedbackMaster
 include shared/mixins
 block feedback-content
-	div.gg-center-col.feedback-post
+	div.gg-center-col
 		div.gg-inner-row-2.gg-top-post
 			+feefbackHead("launch")
-			div.gg-inner-col-2
+			.gg-inner-col-2.feedback-post
 				div This is the last step in the process. The project can only reach this stage once it is complete and the customer is fully satisfied. Your website will therefore only go live once it is ready to be used by visitors and you are completely happy with it. Just let us know when to launch it. We will also be more than happy to provide you a hosting solution, and help you with any maintenance your site might need. And if you ever need a website redesign or update in the future, who else would be better at working with our code than us? We know them like the back of our hands.
-
-			div.gg-inner-col-2
-				img(src="assets/images/LAUNCH.jpg")
-		div.gg-inner-row-2
-			div.gg-inner-col-2
 				p.text-right
-					a.text-important.underline-none(href="#") back
+					a.text-orange.more-link.underline-none.text-bold(href="#") back
+			.gg-inner-col-2
+				img(src="assets/images/LAUNCH.jpg")
+
+block foot
+	+footer1()

@@ -1,4 +1,4 @@
-
+include footer
 mixin head()
 	head
 		title GURU GRAPHICS
@@ -94,14 +94,14 @@ mixin aboutgurugraphic()
 	div.gg-separator.gg-post-row
 		div.gg-center-left-offset
 			div.gg-inner-row-2.gg-post
-				div.gg-inner-col-2
+				div.gg-inner-col-2.about-guru-graphic
 					img(src="assets/images/img-3.jpg")
-				div.gg-inner-col-2
+				div.gg-inner-col-2.about-guru-graphic
 					h3.heading-post about guru graphics
 					div ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <span class="text-bold">tempor</span> incididunt ut labore et dolore magna aliqua. Ut enim ad minim <span class="text-bold">veniam</span>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
 
 						p.text-right
-							a.text-important(href="#") more
+							a.more-link.text-important(href="#") more
 
 mixin thehumansbehinds(pageName)
 	div.gg-separator.gg-post-row
@@ -315,99 +315,6 @@ mixin headermenu2()
 							a.text-body(href="#") our&nbsp;studio
 						li
 							a.text-important(href="#") join&nbsp;us
-
-mixin footer1()
-	.gg-row.gg-footer
-		.gg-center-left-offset
-			.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") about guru
-					li
-						a.link-inverse(href="#") portfolio
-					li
-						a.link-inverse(href="#") feedback
-
-			.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") services
-					li
-						a.link-inverse(href="#") studio
-			.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") how we are
-					li
-						a.link-inverse(href="#") what we do
-			.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") what we believe
-					li
-						a.link-inverse(href="#") our culture
-			.foot-list-group.footer-studio-joinus
-				ul
-					li
-						a.link-inverse(href="#") studio
-					li
-						a.link-inverse(href="#") join us
-			.foot-list-group.footer-studio-address
-				ul
-					li
-						a.link-orange(href="#") Sunset House, CRO 2AP
-					li
-						a.link-orange(href="#") 020 8774 7155
-					li
-						a.link-orange(href="#") new project&nbsp;&nbsp;
-							span.gi.gi-envelop
-					li
-						a.link-orange(href="#") contact us&nbsp;&nbsp;
-							span.gi.gi-mobile
-
-mixin footer2()
-	div.gg-row.gg-footer
-		div.gg-center-left-offset
-			div.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") about guru
-					li
-						a.link-inverse(href="#") portfolio
-
-			div.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") services
-					li
-						a.link-inverse(href="#") studio
-			div.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") how we are
-					li
-						a.link-inverse(href="#") what we do
-			div.foot-list-group
-				ul
-					li
-						a.link-inverse(href="#") what we believe
-					li
-						a.link-inverse(href="#") our culture
-			div.foot-list-group.footer-studio-joinus
-				ul
-					li
-						a.link-inverse(href="#") project
-			div.foot-list-group.footer-studio-address
-				ul
-					li
-						a.link-orange(href="#") Sunset House, CRO 2AP
-					li
-						a.link-orange(href="#") 020 8774 7155
-					li
-						a.link-orange(href="#") new project
-					li
-						a.link-orange(href="#") contact us
-
 
 mixin rightStatistic()
 	div.gg-right-col

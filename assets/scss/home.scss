@@ -67,3 +67,7 @@ $line-height: 25px;
 .work-with-team-md{
 	@include positionandheight($height-work-with-team-md);
 }
+
+.about-guru-graphic{
+	@include positionandheight($height-the-heman-behind);
+}
