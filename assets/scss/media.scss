@@ -1,0 +1,25 @@
+
+@media screen and (max-width: $medium-desktop) {
+
+  .hidden-mobile { display: none; }
+  .gg-container{
+    width : $page-medium;
+  }
+
+  .gg-header{
+    .gg-center-left-offset{
+      margin-left: 0;
+    }
+  }
+
+  .h-line, .h-line-right, .h-line-left{
+    width: 100%;
+  }
+
+  .gg-separator .gg-center-left-offset{
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+  }
+
+}

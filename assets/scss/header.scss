@@ -18,6 +18,8 @@ $header-inside-margin-top: 30px;
 	}
 }
 
+
+
 .gg-slogan{
 	font-size:24px;
 }
@@ -53,13 +55,6 @@ $menu-font-size: 19px;
 				}
 		}
 
-		//&:last-child {
-		//	a{
-		//		border-right: none;
-		//		//@extend .text-lightgray;
-		//	}
-		//}
-
 		ul.gg-sub-menu{
 			position: absolute;
 			right:0;
@@ -90,6 +85,8 @@ $menu-font-size: 19px;
 	
 }
 
+
+
 .gg-header-search{
 	text-decoration: none;
 	@include vartical-padding(0, 6px);
@@ -100,3 +97,4 @@ $menu-font-size: 19px;
 	display: block;
 	margin-top: $header-inside-margin-top;
 }
+
