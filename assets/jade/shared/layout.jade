@@ -9,13 +9,15 @@ html(lang="en")
 		link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
 		link(href="assets/css/style.css" rel="stylesheet")
 	body
-		.gg-container
+		.gg-container(style="background-color: #fff4f4")
 			block header
 				//container for  Header section
 				.gg-row.gg-header
 					.gg-center-left-offset
 						.gg-inner-row-2
-							.gg-inner-col-2
+							.mobile-menu-add.visible-mobile
+								button &nbsp;
+							.gg-inner-col-2.text-center
 								p
 									img(class="img-responsive" src="assets/images/logo.jpg")
 								p

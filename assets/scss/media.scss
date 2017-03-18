@@ -1,25 +1,60 @@
-
+.visible-mobile { display: none; }
+$inner-width: $page-medium - 185px;
 @media screen and (max-width: $medium-desktop) {
 
   .hidden-mobile { display: none; }
+  .visible-mobile { display: block; }
+  .mobile-margin{
+    margin-left: 92px;
+    margin-right: 93px;
+  }
   .gg-container{
     width : $page-medium;
   }
 
+
+
   .gg-header{
+    padding-top: 31px;
+    padding-bottom: 30px;
+    background-image: url('img/mobile/menu-plus.png');
+    background-repeat: no-repeat;
     .gg-center-left-offset{
       margin-left: 0;
+      .mobile-menu-add{
+        width: 92px;
+        float: left;
+        button{
+          background: transparent url('img/mobile/add.png') no-repeat;
+          width: 31px;
+          height: 31px;
+          border: none;
+          cursor: pointer;
+          margin-left: 40px;
+        }
+      }
     }
+
   }
 
   .h-line, .h-line-right, .h-line-left{
     width: 100%;
   }
 
-  .gg-separator .gg-center-left-offset{
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
+  .gg-separator {
+    .gg-center-left-offset{
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none;
+    }
+    .gg-center-col{
+      padding-left: 0;
+      border: none;
+    }
   }
+  .gg-center-col{
+      width: $inner-width;
+      @extend .mobile-margin;
+    }
 
 }

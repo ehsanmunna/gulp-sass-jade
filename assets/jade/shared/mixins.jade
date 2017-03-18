@@ -43,7 +43,7 @@ mixin joinUs()
 
 
 mixin homeleftlink()
-	div.gg-left-col
+	div.gg-left-col.hidden-mobile
 		ul.gg-nav-list.home-nav-list
 			li
 				a.link-orange.text-bold(href="guru_graphics_home_whoweare.html") Who we are
@@ -106,11 +106,21 @@ mixin aboutgurugraphic()
 mixin thehumansbehinds(pageName)
 	div.gg-separator.gg-post-row
 		div.gg-center-left-offset
-			div.gg-inner-row-2.gg-post
+			div.gg-inner-row-2.gg-post.hidden-mobile
 				div.gg-inner-col-2.the-human-behind
 					img(src="assets/images/img-3.jpg")
 				div.gg-inner-col-2.the-human-behind
 					h3.heading-post the humans behinds
+					div It's all aobut who we really are: we've got <span class="text-bold">designers delopers</span>, various nerds and creeps, and hackers. All defferent professions, personalities and cultures, but what's in common is the passion for something, the will to go in the same direction and think in the same positive way. to <span class="text-bold">have fun and be creative</span>we don't want to die sitting at our desks, no way. <span class="text-bold">We want to make it our own way - go big or go home.</span>
+
+						p.text-right
+							a.text-important.more-link(href="#") more
+
+			div.gg-inner-row-2.gg-post.visible-mobile
+				h3.heading-post the humans behinds
+				div.gg-inner-col-2.the-human-behind
+					img(src="assets/images/img-3.jpg")
+				div.gg-inner-col-2.the-human-behind
 					div It's all aobut who we really are: we've got <span class="text-bold">designers delopers</span>, various nerds and creeps, and hackers. All defferent professions, personalities and cultures, but what's in common is the passion for something, the will to go in the same direction and think in the same positive way. to <span class="text-bold">have fun and be creative</span>we don't want to die sitting at our desks, no way. <span class="text-bold">We want to make it our own way - go big or go home.</span>
 
 						p.text-right
@@ -317,7 +327,7 @@ mixin headermenu2()
 							a.text-important(href="#") join&nbsp;us
 
 mixin rightStatistic()
-	div.gg-right-col
+	div.gg-right-col.hidden-mobile
 		ul.gg-nav-info.home-nav-list
 			li.text-bold.text-keytext Guru facts
 			li.text-bold.text-keytext Founded
