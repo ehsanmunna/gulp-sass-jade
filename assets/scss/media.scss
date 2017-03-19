@@ -1,9 +1,37 @@
-.visible-mobile { display: none; }
-$inner-width: $page-medium - 185px;
+@media screen and (min-width: $page-large) {
+  .hidden-mobile, .visible-desktop {
+    display: block;
+  }
+
+  .hidden-desktop, .visible-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $medium-desktop + 1px) and (max-width: $page-large) {
+  .hidden-mobile, .visible-desktop {
+    display: block;
+  }
+
+  .hidden-desktop, .visible-mobile {
+    display: none;
+  }
+}
+
+$margin-left: 92px;
+$margin-right: 93px;
+$inner-width: $page-medium - ($margin-left + $margin-right);
 @media screen and (max-width: $medium-desktop) {
 
-  .hidden-mobile { display: none; }
-  .visible-mobile { display: block; }
+  .hidden-mobile, .visible-desktop{
+    display: none;
+  }
+
+  .visible-mobile, .hidden-desktop{
+    display: block;
+  }
+
+
   .mobile-margin{
     margin-left: 92px;
     margin-right: 93px;
@@ -12,13 +40,15 @@ $inner-width: $page-medium - 185px;
     width : $page-medium;
   }
 
-
+  .mobile-header-menu-bg{
+    background-image: url('img/mobile/menu-plus.png');
+    background-repeat: no-repeat;
+  }
 
   .gg-header{
     padding-top: 31px;
     padding-bottom: 30px;
-    background-image: url('img/mobile/menu-plus.png');
-    background-repeat: no-repeat;
+
     .gg-center-left-offset{
       margin-left: 0;
       .mobile-menu-add{
@@ -36,25 +66,88 @@ $inner-width: $page-medium - 185px;
     }
 
   }
+  .mobile-footer{
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+
+  .gg-footer{
+    margin-top: 0;
+  }
+
+  .mobile-footer-btn{
+    background: transparent url('img/mobile/footer-up.png') no-repeat;
+    width: 56px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+  }
 
   .h-line, .h-line-right, .h-line-left{
     width: 100%;
   }
 
   .gg-separator {
+
     .gg-center-left-offset{
       margin-left: 0;
       padding-left: 0;
       border-left: none;
     }
+
     .gg-center-col{
       padding-left: 0;
       border: none;
     }
+
   }
+
   .gg-center-col{
       width: $inner-width;
       @extend .mobile-margin;
+  }
+
+
+  .gg-post-row{
+    padding-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .gg-post{
+    width: $page-medium;
+    font-size: 1.4em;
+    margin:0;
+    .gg-inner-col-2{
+      width: $inner-width;
+      margin-right: $margin-left;
+      margin-left: $margin-right;
     }
+  }
+
+  .gg-center-left-offset{
+      width: $page-medium;
+      margin-left: 0;
+  }
+
+  .gg-post-row-bottom{
+    margin-bottom: 35px;
+  }
+
+  .the-human-behind, .work-with-team, .we-are-in-london-sm{
+    min-height: 0;
+  }
+
+  .mobile-text{
+    margin-top: 15px;
+    margin-bottom: 40px;
+    line-height: 36px;
+  }
+
+  .more-link{
+    right: 50%;
+  }
+
+
+
 
 }

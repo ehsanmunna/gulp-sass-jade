@@ -1,5 +1,6 @@
 include mixins
 include weareinlondon
+include mobileMixin
 doctype html
 html(lang="en")
 	head
@@ -8,16 +9,24 @@ html(lang="en")
 		link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Cabin:600" rel="stylesheet")
 		link(href="assets/css/style.css" rel="stylesheet")
+		script(src="lib/js/jquery-3.1.1.js")
 	body
-		.gg-container(style="background-color: #fff4f4")
+		.gg-container
 			block header
 				//container for  Header section
-				.gg-row.gg-header
+				+mobile-menu()
+				.gg-row.gg-header.mobile-header-menu-bg
 					.gg-center-left-offset
 						.gg-inner-row-2
-							.mobile-menu-add.visible-mobile
-								button &nbsp;
-							.gg-inner-col-2.text-center
+							.mobile-menu-add.hidden-desktop
+								button(onclick="menuClose()") &nbsp;
+							.gg-inner-col-2.hidden-mobile
+								p
+									img(class="img-responsive" src="assets/images/logo.jpg")
+								p
+									h3.text-bold.gg-slogan no project is too big, or too small for
+										span.text-important &nbsp;us!
+							#logoNslocan.gg-inner-col-2.text-center.visible-mobile
 								p
 									img(class="img-responsive" src="assets/images/logo.jpg")
 								p
@@ -33,6 +42,7 @@ html(lang="en")
 
 			block content
 		.gg-foot-double-border
+
 		.gg-container
 			block foot
 				//container for footer links
@@ -40,8 +50,10 @@ html(lang="en")
 			//end container for footer links
 
 			//container for copyright
-			.gg-row
+			.gg-row.hidden-mobile
 				.div.gg-center-left-offset
 					p.gg-copyright.text-center
 						| 2016 Guru Graphic ltd. | T&amp;C | Bedford Park - London CRO 2AP - Registered in England and Wales 08098445
 			//end container for copyright
+
+		script(src="lib/js/home.js")

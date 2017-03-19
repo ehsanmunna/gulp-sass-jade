@@ -92,7 +92,11 @@ mixin footer2()
             +footerAddressWithIcon()
 
 mixin footer3()
-    .gg-row.gg-footer
+    .gg-row.gg-footer.mobile-footer.visible-mobile
+        .gg-center-left-offset.text-center
+            button.mobile-footer-btn &nbsp;
+
+    .gg-row.gg-footer.hidden-mobile
         .gg-center-left-offset
             +footerLeftGroup1()
             +footerAddressWithIcon()
